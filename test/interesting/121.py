@@ -1,6 +1,6 @@
 #121. Best Time to Buy and Sell Stock
 #Subarray solution
-  def maxProfit(self, prices: List[int]) -> int:
+def maxProfit(self, prices: List[int]) -> int:
         maxProf = 0
         curProf = 0
         
