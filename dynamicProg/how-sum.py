@@ -27,9 +27,11 @@ def how_sum(targetSum, numbers):
 # space: O(m*m)
 
 print(how_sum(7, [2,3]))
+sum_dict = {}
 print(how_sum(7, [5,3,4,7]))
 sum_dict = {}
 print(how_sum(7, [2,4]))
+sum_dict = {}
 print(how_sum(8, [2,3,5]))
 sum_dict = {}
 #memoization example
