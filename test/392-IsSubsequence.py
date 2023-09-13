@@ -1,6 +1,6 @@
 
 str1 = "abc"
-str2 = "ahbgdc"
+str2 = "ahbbgdc"
 
 def test(s, t):
         index = 0

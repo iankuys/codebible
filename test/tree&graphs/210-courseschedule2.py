@@ -55,57 +55,57 @@ class Solution:
         return topological_sorted_order[::-1] if is_possible else []
 
 
-# (MY SOLUTION)
-# class Solution:
-#     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-#         requisites = {}
-#         result = []
+# (MY SOLUTION) doesnt work tho XD
+class Solution:
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        requisites = {}
+        result = []
 
-#         if len(prerequisites) == 0:
-#             for i in range(numCourses):
-#                 result.insert(0, i)
-#             return result
+        if len(prerequisites) == 0:
+            for i in range(numCourses):
+                result.insert(0, i)
+            return result
 
-#         for prereq in prerequisites:
-#             array = []
-#             if prereq[0] not in requisites:
-#                 array.append(prereq[1])
-#                 requisites[prereq[0]] = array
-#             else:
-#                 array = requisites[prereq[0]]
-#                 array.append(prereq[1])
-#                 requisites[prereq[0]] = array
+        for prereq in prerequisites:
+            array = []
+            if prereq[0] not in requisites:
+                array.append(prereq[1])
+                requisites[prereq[0]] = array
+            else:
+                array = requisites[prereq[0]]
+                array.append(prereq[1])
+                requisites[prereq[0]] = array
         
-#         for prereq in prerequisites:
-#             ans = self.dfs(requisites, prereq[0], [], False)
-#             result = max(result, ans, key=len)
+        for prereq in prerequisites:
+            ans = self.dfs(requisites, prereq[0], [], False)
+            result = max(result, ans, key=len)
 
-#         print(result)
-#         if result:
-#             difference = numCourses - len(result)
-#             print(len(result))
-#             print("HI")
-#             if difference > 0:
-#                 for i in range(difference):
-#                     result.insert(0,max(result)+1)
+        print(result)
+        if result:
+            difference = numCourses - len(result)
+            print(len(result))
+            print("HI")
+            if difference > 0:
+                for i in range(difference):
+                    result.insert(0,max(result)+1)
 
-#         return result
+        return result
 
-#     def dfs(self, graph, source, array, nope):
-#         if source in array:
-#             array.remove(source)
-#             array.insert(0,source)
-#         else:
-#             array.insert(0,source)
-#         if source in graph and not nope:
-#             for neighbor in graph[source]:
-#                 if neighbor in graph:
-#                     if graph[neighbor] == [source]:
-#                         nope = True
-#                 self.dfs(graph, neighbor, array, nope)
+    def dfs(self, graph, source, array, nope):
+        if source in array:
+            array.remove(source)
+            array.insert(0,source)
+        else:
+            array.insert(0,source)
+        if source in graph and not nope:
+            for neighbor in graph[source]:
+                if neighbor in graph:
+                    if graph[neighbor] == [source]:
+                        nope = True
+                self.dfs(graph, neighbor, array, nope)
 
-#         if nope:
-#             return []
+        if nope:
+            return []
 
-#         return array
+        return array
 
