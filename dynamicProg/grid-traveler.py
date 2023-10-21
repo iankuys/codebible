@@ -1,3 +1,11 @@
+# Problem Statement :
+
+# Problem statement is : A robot is situated at top left corner of an m x n grid. It needs to travel to the bottom right corner. The robot can only move either right or down at any point
+
+# This is another classical dynamic programming problem.
+
+# Question: Calculate total number of ways user can travel from S(0,0) to E(2,2)
+
 # 1. traveler need to reach the bottom right of grid
 # 2. traveler can only move right or down
 

@@ -9,6 +9,7 @@ def how_sum(targetSum, numbers):
         remainder = targetSum - number
         result = how_sum(remainder, numbers)
         if (result != None):
+            print(targetSum, result)
             result.append(number)
             sum_dict[targetSum] = result
             return sum_dict[targetSum]

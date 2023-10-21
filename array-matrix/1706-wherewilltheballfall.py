@@ -1,5 +1,14 @@
 from typing import List
+# Overview
+# It is an interesting problem. We can visualize it as a zig-zag bowling game where the grid represents the bowling surface. Every column is a different lane.
 
+# The balls thrown from the first row of every lane, travel in a zig-zag direction based on the walls in the grid.
+
+# Problem Visualisation
+
+# The question is, where will each of these balls fall at the end?
+
+# There could be one of the two consequences.
 class Solution:
     def findBall(self, grid: List[List[int]]) -> List[int]:
         array = []

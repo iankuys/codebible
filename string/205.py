@@ -1,3 +1,5 @@
+#  if one-to-one mapping is possible for every character of the first string to 
+# every character of the second string. For example, consider the two strings: “ACAB” and “XCXY”
 #isomorphic strings
 def isIsomorphic(self, s: str, t: str) -> bool:
         

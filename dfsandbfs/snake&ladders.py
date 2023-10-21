@@ -4,6 +4,8 @@ class Solution(object):
         :type board: List[List[int]]
         :rtype: int
         """
+        #~ is used for complementary index e.g. ~1 = -2. equation (~i) = -( i + 1), index from right
+
 
         n = len(board)
         need = {1: 0}
@@ -12,8 +14,10 @@ class Solution(object):
             for i in range(x + 1, x + 7):
                 a, b = (i - 1) / n, (i - 1) % n
                 nxt = board[~a][b if a % 2 == 0 else ~b]
-                if nxt > 0: i = nxt
-                if i == n * n: return need[x] + 1
+                if nxt > 0: 
+                    i = nxt
+                if i == n * n: 
+                    return need[x] + 1
                 if i not in need:
                     need[i] = need[x] + 1
                     bfs.append(i)

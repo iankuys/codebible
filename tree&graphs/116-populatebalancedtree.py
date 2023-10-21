@@ -1,3 +1,5 @@
+# 116. Populating Next Right Pointers in Each Node
+
 class Solution:
     def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
         return self.bfs(root)

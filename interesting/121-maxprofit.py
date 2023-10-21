@@ -1,6 +1,8 @@
 #121. Best Time to Buy and Sell Stock
 #Subarray solution
-def maxProfit(self, prices: List[int]) -> int:
+from typing import List
+
+def maxProfit(prices: List[int]) -> int:
         maxProf = 0
         curProf = 0
         
@@ -11,8 +13,11 @@ def maxProfit(self, prices: List[int]) -> int:
             
         return maxProf   
     
+prices = [7,1,5,19,8,7,25]
+maxprof = maxProfit(prices)
+
 #linear comparison(remember that arrays are iterated in one direction):
-def maxProfit(self, prices: List[int]) -> int:
+def maxProfit(prices: List[int]) -> int:
         maxProf = 0
         cheapestPrice = 100000000000000000000000000000000000000000
         
@@ -22,3 +27,4 @@ def maxProfit(self, prices: List[int]) -> int:
             elif (prices[i]-cheapestPrice > maxProf):
                 maxProf = prices[i]-cheapestPrice
         return maxProf   
+
