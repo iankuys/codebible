@@ -13,7 +13,6 @@ class Solution:
         
         dup = {node.val: Node(node.val, [])}
         queue = [node]
-        array = []
         
         while queue:
             cur = queue.pop(0)
