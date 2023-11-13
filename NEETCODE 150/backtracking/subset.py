@@ -12,9 +12,11 @@ class Solution:
                 res.append(subsets.copy())
                 return
             
+            # subset incluidng itself
             subsets.append(nums[i])
             dfs(i + 1)
 
+            # subset of []
             subsets.pop()
             dfs(i + 1)
 

@@ -17,7 +17,7 @@ class Solution:
             for dx, dy in directions:
                 new_r, new_c = row + dx, col + dy
 
-                # we are doing dfs from left to right
+                # we are doing dfs from left to right/ or bottom to top
                 if m>new_r >= 0 and n>new_c>= 0 and heights[new_r][new_c] >= heights[row][col] and (new_r, new_c) not in visited:
                     dfs(new_r, new_c, visited)
 

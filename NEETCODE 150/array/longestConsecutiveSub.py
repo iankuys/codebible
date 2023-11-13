@@ -23,14 +23,10 @@ class Solution:
         j= 0
         max_len = 0
 
-        print(sorted_nums)
         while i < len(sorted_nums):
-            
             if i + 1 < len(sorted_nums) and abs(sorted_nums[i + 1] - sorted_nums[i]) == 1:
                 i += 1
             else:
-                print(i, j) 
-                print(max_len)
                 max_len  = max(max_len, i - j + 1)
                 i += 1
                 j = i

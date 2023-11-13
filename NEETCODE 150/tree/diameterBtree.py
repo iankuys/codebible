@@ -5,8 +5,8 @@
 # The length of a path between two nodes is represented by the number of edges between them.
 class Solution:
     def __init__(self):
-	    self.diameter = 0  # stores the maximum diameter calculated
-	
+        self.diameter = 0  # stores the maximum diameter calculated
+         
     def depth(self, node: Optional[TreeNode]) -> int:
         """
         This function needs to do the following:
