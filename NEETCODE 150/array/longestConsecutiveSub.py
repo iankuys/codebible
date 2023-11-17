@@ -33,6 +33,29 @@ class Solution:
 
         return max_len
     
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        i = 0
+        k = 0
+        longest = 0
+
+        sorted_nums = sorted(set(nums))
+        if not nums:
+            return 0
+
+        for j in range(1, len(sorted_nums)):
+            if sorted_nums[j] - sorted_nums[k] == 1:
+                longest = max(longest, j - i + 1)
+                k += 1
+            else:
+                i = j
+                k = j
+        
+        if longest:
+            return longest
+        else:
+            return 1
+    
 #faster soluton on leet code ig
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
