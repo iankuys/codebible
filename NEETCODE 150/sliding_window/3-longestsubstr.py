@@ -15,7 +15,7 @@ class Solution:
         
         for i, c in enumerate(s):
             if c in dictionary and start <= dictionary[c]:
-                # this will set the start of the search from the last time the same character was found
+                # this will set the start of the search from the next char after the last time the same character was found
                 start = dictionary[c] + 1
             else:
                 max_len = max(max_len, i-start+1)

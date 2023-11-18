@@ -4,7 +4,9 @@
 
 # You may assume that you have an infinite number of each kind of coin.
 # https://leetcode.com/problems/coin-change/description/
-
+# Input: coins = [1,2,5], amount = 11
+# Output: 3
+# Explanation: 11 = 5 + 5 + 1
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:        
         dp=[math.inf] * (amount+1)
