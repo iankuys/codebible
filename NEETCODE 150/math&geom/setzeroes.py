@@ -14,11 +14,11 @@ class Solution:
 
         for i in range(n):
             for j in range(m):
-                    if matrix[i][j] == 0:
-                        i_zero.add(i)
-                        j_zero.add(j)
+                if matrix[i][j] == 0:
+                    i_zero.add(i)
+                    j_zero.add(j)
         
         for i in range(n):
             for j in range(m):
-                    if i in i_zero or j in j_zero:
-                        matrix[i][j] = 0
+                if i in i_zero or j in j_zero:
+                    matrix[i][j] = 0
