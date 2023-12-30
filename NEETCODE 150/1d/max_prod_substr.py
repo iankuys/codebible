@@ -19,7 +19,7 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         res = max(nums)
-        minCur, maxCur = 1, 1
+        minCur, maxCur = 1, 1 # min is for negative numbers
 
         for n in nums:
             if n == 0:
