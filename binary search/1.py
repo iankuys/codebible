@@ -28,9 +28,8 @@ def twoSum(nums: List[int], target: int) -> List[int]:
             
                 while (count < indexToCheck):
                     sum = 0
-                    sum = temp[i] + temp[count]
 
-                    if sum == target:
+                    if (sum := temp[i] + temp[count]) == target:
                         return [i, count]
                         
                     count = count + 1

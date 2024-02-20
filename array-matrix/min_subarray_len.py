@@ -30,8 +30,7 @@ class Solution:
         memo = {}
 
         for i in range(n):
-            result = self.dfs(nums, target, i, 0, memo)
-            if result != -1:
+            if (result := self.dfs(nums, target, i, 0, memo)) != -1:
                 min_len = min(min_len, result)
 
         return 0 if min_len == 99999999 else min_len

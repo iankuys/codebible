@@ -7,9 +7,8 @@ def isPalindrome(s):
  
 # Driver code
 s = "malayalam"
-ans = isPalindrome(s)
  
-if ans:
+if ans := isPalindrome(s):
     print("Yes")
 else:
     print("No")

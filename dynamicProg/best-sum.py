@@ -11,8 +11,7 @@ def best_sum(targetSum, numbers):
     
     for number in numbers:
         remainder = targetSum - number
-        remainder_combination = best_sum(remainder, numbers)
-        if remainder_combination != None:
+        if (remainder_combination := best_sum(remainder, numbers)) != None:
             remainder_combination_copy = copy.deepcopy(remainder_combination)
             remainder_combination_copy.append(number) 
             combination = remainder_combination_copy

@@ -29,8 +29,7 @@ def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
     print(middle)
         
     while(head):
-        count2 = count2 + 1
-        if(count2 == middle):
+        if((count2 := count2 + 1) == middle):
             tail.next = head
             return tail.next
         head = head.next

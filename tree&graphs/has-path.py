@@ -14,8 +14,7 @@ def has_path(graph, src, dst):
     queue = [src]
 
     while queue:
-        path = queue.pop(0)
-        if path == dst:
+        if (path := queue.pop(0)) == dst:
             return True
         for neighbor in graph[src]:
             queue.append(neighbor)

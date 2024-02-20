@@ -7,8 +7,7 @@ def how_sum(targetSum, numbers):
     
     for number in numbers:
         remainder = targetSum - number
-        result = how_sum(remainder, numbers)
-        if (result != None):
+        if ((result := how_sum(remainder, numbers)) != None):
             print(targetSum, result)
             result.append(number)
             sum_dict[targetSum] = result
