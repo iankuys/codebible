@@ -24,7 +24,7 @@ class Solution:
             if i >= w and s2[i-w] in cntr: 
                 cntr[s2[i-w]] += 1
 
-            if all([cntr[i] == 0 for i in cntr]): # see optimized code below
+            if all(cntr[i] == 0 for i in cntr): # see optimized code below
                 return True
 
         return False
