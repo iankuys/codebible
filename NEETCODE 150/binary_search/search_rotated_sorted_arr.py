@@ -11,6 +11,31 @@
 # Input: nums = [4,5,6,7,0,1,2], target = 0
 # Output: 4
 # https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+
+# 2025 solution
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        left = 0
+        right = len(nums) - 1
+
+        # base case if last actually bigger than first O(1) then its not rotated?
+        if nums[right] > nums[left]:
+            return nums[left]
+
+        # get first and last element to do soemthing?
+        # binary search then compare the value to first or last
+        while (left < right):
+            mid = (left + right) // 2
+
+            # its in the left half of the array
+            if nums[mid] < nums[right]:
+                right = mid
+            # its on the right half of the array
+            elif nums[mid] > nums[right]:
+                left = mid + 1
+            
+        return nums[left]
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         

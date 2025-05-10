@@ -8,6 +8,32 @@
 # Input: piles = [3,6,7,11], h = 8
 # Output: 4
 # https://leetcode.com/problems/koko-eating-bananas/description/
+
+# 2025 solution
+class Solution:
+    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+        rates = range(1, max(piles) + 1)
+
+        minRate = float('infinity')
+        left = 0 
+        right = len(rates) - 1
+
+        while (left <= right):
+            middle = (left + right) // 2
+            totalHours = 0
+            rate = rates[middle]
+
+            for pile in piles:
+                totalHours += math.ceil(pile / rate)
+            
+            if totalHours <= h:
+                minRate = min(minRate, rate)
+                right = middle - 1
+            else:
+                left = middle + 1
+
+        return minRate
+    
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         # the larger the faster

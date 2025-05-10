@@ -12,19 +12,15 @@
 # Output: false
 # https://leetcode.com/problems/permutation-in-string/solutions/1761953/python3-sliding-window-optimized-explained/
 
-# Better solution
+# my own O(N^2)
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        cntr, w = Counter(s1), len(s1)   
+        # window size will be size of s1
+        sorted_s1 = sorted(s1)
 
-        for i in range(len(s2)):
-            if s2[i] in cntr: 
-                cntr[s2[i]] -= 1
-            # this part resets the passed searched chars in dict to what it was
-            if i >= w and s2[i-w] in cntr: 
-                cntr[s2[i-w]] += 1
-
-            if all([cntr[i] == 0 for i in cntr]): # see optimized code below
+        for i in range(len(s2) - len(s1) + 1):
+            substr = sorted(s2[i:i+len(s1)])
+            if (substr == sorted_s1):
                 return True
 
         return False
@@ -51,29 +47,30 @@ def checkInclusion(self, s1: str, s2: str) -> bool:
 
 	return False
 
-# my own
+            
+from collections import Counter
+
+# chatgpt solution easy to follow with counter class and just compare the dictionary
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        
-        size = len(s1)
-
-        i = 0
-        j = size
-
-        if size == 2:
-            if (s2.find(s1) >= 0) or (s2.find(s1[::-1]) >= 0):
-                return True
+        if len(s1) > len(s2):
             return False
-    
-        while (j <= len(s2)):
-            
-            substr = s2[i:j]
 
-            if sorted(substr) == sorted(s1):
+        s1_count = Counter(s1)
+        window_count = Counter(s2[:len(s1)])
+
+        if s1_count == window_count:
+            return True
+
+        for i in range(len(s1), len(s2)):
+            window_count[s2[i]] += 1
+            window_count[s2[i - len(s1)]] -= 1
+
+            if window_count[s2[i - len(s1)]] == 0:
+                del window_count[s2[i - len(s1)]]
+
+            if s1_count == window_count:
                 return True
-            
-            i += 1
-            j += 1
 
         return False
-    
+

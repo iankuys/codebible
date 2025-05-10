@@ -13,18 +13,19 @@ def maxProfit(prices: List[int]) -> int:
             
         return maxProf   
     
-prices = [7,1,5,19,8,7,25]
-maxprof = maxProfit(prices)
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        i = 0
+        j = i + 1
+        profit = 0
 
-#linear comparison(remember that arrays are iterated in one direction):
-def maxProfit(prices: List[int]) -> int:
-        maxProf = 0
-        cheapestPrice = 100000000000000000000000000000000000000000
-        
-        for i in range(len(prices)):
-            if (prices[i]< cheapestPrice):
-                cheapestPrice = prices[i]
-            elif (prices[i]-cheapestPrice > maxProf):
-                maxProf = prices[i]-cheapestPrice
-        return maxProf   
+        while (j < len(prices)):
+            profit = max(profit, prices[j] - prices[i])
 
+            if prices[j] - prices[i] < 0:
+                i += 1
+            else:
+                j += 1
+
+        return profit
+            

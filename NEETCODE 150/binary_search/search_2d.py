@@ -9,6 +9,42 @@
 # Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3
 # Output: true
 # https://leetcode.com/problems/search-a-2d-matrix/description/
+
+# new and better solution by me 2025
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        top = 0
+        down = len(matrix) - 1
+
+        while (top <= down):
+            middleRow = (top + down) // 2
+
+            # bigger than first element of row, then check the row before
+            if matrix[middleRow][0] > target:
+                down = middleRow - 1
+            # if its target is bigger than the last element of row, then check the next row
+            elif matrix[middleRow][-1] < target:
+                top = middleRow + 1
+            # if they are both not true, then we know that it is in this row
+            else:
+                row = matrix[middleRow]
+                left = 0
+                right = len(row) - 1
+
+                while (left <= right):
+                    middleCol = (left + right) // 2
+
+                    if row[middleCol] < target:
+                        left = middleCol + 1
+                    elif row[middleCol] > target:
+                        right = middleCol - 1
+                    else:
+                        return True
+
+                return False  # target not found in the row, exit as soon as we have checked the row
+
+        return False # target not found in any row
+    
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         
@@ -44,3 +80,4 @@ class Solution:
                 return True
 
         return False
+    

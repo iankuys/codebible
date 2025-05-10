@@ -31,11 +31,49 @@ Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
 """
 
-# similar to twosum? two pointers?
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
 
-# [-4,-1,-1,0,1,2]
-#  i  k      j
-# nums[i] = -(nums[j] + nums[k])
+        # sorted nums will look like [-4,-1,-1,0,1,2]
+        sorted_nums = sorted(nums)
+        i = 0
+        res = []
+
+        # similar to twosum? two pointers?
+
+        # [-4,-1,-1,0,1,2]
+        #  i  k      j
+        # nums[i] = -(nums[j] + nums[k])
+        while (i < len(sorted_nums) - 2):
+            if i > 0 and sorted_nums[i] == sorted_nums[i - 1]:
+                i += 1
+                continue
+
+            target = sorted_nums[i]
+            j = len(sorted_nums) - 1
+            k = i + 1
+
+            while (k < j):
+                if target == -(sorted_nums[j] + sorted_nums[k]):
+                    res.append([sorted_nums[i], sorted_nums[j], sorted_nums[k]])
+
+                    # Skip duplicates for k
+                    while k < j and sorted_nums[k] == sorted_nums[k + 1]:
+                        k += 1
+
+                    # Skip duplicates for j
+                    while k < j and sorted_nums[j] == sorted_nums[j - 1]:
+                        j -= 1
+                    k += 1
+                    j -= 1
+                elif target < -(sorted_nums[j] + sorted_nums[k]):
+                    k += 1
+                else:
+                    j -= 1
+            i += 1
+
+        return res
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         sorted_nums = sorted(nums)

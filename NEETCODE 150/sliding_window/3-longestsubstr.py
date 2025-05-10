@@ -25,3 +25,19 @@ class Solution:
             
         return max_len
             
+# 2025 solution
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        repeat = {}
+        start = 0
+        longest = 0
+
+        for i, char in enumerate(s):
+            # need to check repeat[char] >= start to ensure the repeated character is within the current window.
+            # case like abba where the last a is in the new window
+            if char in repeat and repeat[char] >= start:
+                start = repeat[char] + 1
+            repeat[char] = i
+            longest = max(longest, i - start + 1)
+        
+        return longest

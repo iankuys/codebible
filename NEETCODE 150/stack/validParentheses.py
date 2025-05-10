@@ -32,3 +32,26 @@ class Solution:
         if not stack:
             return True
         return False
+    
+class Solution:
+    def isValid(self, s: str) -> bool:
+        openbrack = []
+        parantheses = {'(': ')', '{': '}', '[': ']'}
+
+        for char in s:
+            if char in parantheses:
+                openbrack.append(char)
+            elif char in parantheses.values():
+                # handles close brackets
+                if not openbrack:
+                    return False
+                else:
+                    last_bracket = openbrack.pop()
+                    if parantheses[last_bracket] != char:
+                        return False
+        
+        # if there are still open brackets return false
+        if openbrack: return False
+
+        return True
+
