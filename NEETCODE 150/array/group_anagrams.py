@@ -17,3 +17,20 @@ class Solution:
             anagram_dict[sorted_str].append(str)
 
         return list(anagram_dict.values())
+
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        hashMap = {}
+        output = []
+
+        for i, s in enumerate(strs):
+            sorted_s = "".join(sorted(s))
+            if sorted_s in hashMap:
+                hashMap[sorted_s].append(s)
+                continue
+            hashMap[sorted_s] = [s]
+
+        for key, value in hashMap.items():
+            output.append(value)
+
+        return output

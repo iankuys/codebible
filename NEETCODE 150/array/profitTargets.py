@@ -33,6 +33,7 @@ def stockPairs(stocksProfit, target):
         seen_profits.add(profit)
         
     return count
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

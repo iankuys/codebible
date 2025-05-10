@@ -71,4 +71,24 @@ class Solution:
         
         return longest
 
+# i mean it works
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        unique_nums = set(nums)
+        sorted_unique_nums = sorted(unique_nums)
+        sorted_unique_list = list(sorted_unique_nums)
 
+        length_arr = []
+        length = 1
+        prev = None
+        
+        for i in range(len(sorted_unique_list)):
+            if prev is not None:
+                if sorted_unique_list[i] - prev == 1:
+                    length += 1
+                else:
+                    length = 1
+            length_arr.append(length)
+            prev = sorted_unique_list[i]
+
+        return max(length_arr) if length_arr else 0
