@@ -38,7 +38,7 @@ Frequency tracking, indexing, sliding windows.
 - [Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](NEETCODE%20150/array/twosum.py)
 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Solution](NEETCODE%20150/array/group_anagrams.py)
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Solution](NEETCODE%20150/sliding_window/3-longestsubstr.py)
-- [Design File System](https://leetcode.com/problems/design-file-system/)
+- [Design File System](https://leetcode.com/problems/design-file-system/) | [Solution](TAGGED/Capital%20One/designFileSystem.py)
 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Solution](NEETCODE%20150/array/anagram.py)
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Solution](NEETCODE%20150/array/containsdup.py)
 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Solution](NEETCODE%20150/array/longestConsecutiveSub.py)
@@ -128,8 +128,8 @@ Recursive exploration of all possibilities.
 
 ### ⚙️ Greedy Algorithms
 Locally optimal decisions lead to global optimum.
-- [Jump Game](https://leetcode.com/problems/jump-game/)
-- [Partition Labels](https://leetcode.com/problems/partition-labels/)
+- [Jump Game](https://leetcode.com/problems/jump-game/) | [Solution](NEETCODE%20150/greedy/jumpgame.py)
+- [Partition Labels](https://leetcode.com/problems/partition-labels/) | [Solution](NEETCODE%20150/greedy/partition_labels.py)
 - [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](NEETCODE%20150/greedy/max_subarray.py)
 
 ### 🌀 Double Deque
@@ -165,12 +165,12 @@ String processing and pattern matching.
 ### 🔢 Matrix Hard
 Used for complex matrix manipulations.
 - [Maximal Square](https://leetcode.com/problems/maximal-square/)
-- [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/)
+- [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/) | [Solution](TAGGED/Capital%20One/countBlackBlocks.py)
 
 ### 🔁 Two Pointer (Hard)
 Used for complex conditions or multiple pointers.
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | [Solution](NEETCODE%20150/two%20pointers/trap.py)
-- [Text Justification](https://leetcode.com/problems/text-justification/)
+- [Text Justification](https://leetcode.com/problems/text-justification/) | [Solution](TAGGED/Capital%20One/textJustification.py)
 
 ### 🧱 Monotonic Stack
 Next greater/smaller, histogram problems.
