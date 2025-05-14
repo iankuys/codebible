@@ -15,7 +15,7 @@ Efficient for range query pre-processing.
 - [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Solution](TAGGED/Barclays/rangeSumQuery.py)
 - [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [Solution](NEETCODE%20150/1d/subArraySum.py)
 - [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
-- [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/?envType=company&envId=barclays&favoriteSlug=barclays-more-than-six-months) [Solution](TAGGED/Barclays/countSubmatricesWithTop-LeftElement.py)
+- [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/?envType=company&envId=barclays&favoriteSlug=barclays-more-than-six-months) | [Solution](TAGGED/Barclays/countSubmatricesWithTop-LeftElement.py)
 
 ### 🔢 Matrices
 Used for 2D problems, often with prefix sums.
