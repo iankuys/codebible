@@ -15,6 +15,15 @@ Efficient for range query pre-processing.
 - [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
 - [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 - [Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+- [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/description/?envType=company&envId=barclays&favoriteSlug=barclays-more-than-six-months)
+
+### Matrices
+Used for 2D problems, often with prefix sums.
+- [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+- [Rotate Image](https://leetcode.com/problems/rotate-image/)
+- [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+- [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
+- [CandyCrush](https://leetcode.com/problems/candy-crush/)
 
 ### 🔺 Heaps / Priority Queue
 Used in Top K, Dijkstra, scheduling problems.
@@ -27,6 +36,7 @@ Frequency tracking, indexing, sliding windows.
 - [Two Sum](https://leetcode.com/problems/two-sum/)
 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [Design File System](https://leetcode.com/problems/design-file-system/)
 
 ### 🔁 Two Pointers
 Efficient for sorted arrays or converging conditions.
@@ -84,6 +94,16 @@ Binary-level tricks for performance or constraints.
 
 ## 🧩 More Difficult Techniques
 
+### Matrix Hard
+Used for complex matrix manipulations.
+- [Maximal Square](https://leetcode.com/problems/maximal-square/)
+- [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/)
+
+### Two Pointer (Hard)
+Used for complex conditions or multiple pointers.
+- [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+- [Text Justification](https://leetcode.com/problems/text-justification/)
+
 ### 🧱 Monotonic Stack
 Next greater/smaller, histogram problems.
 - [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
@@ -96,7 +116,12 @@ Range queries and point updates in log(n) time.
 - [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
 - [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
 
+### Heap
+- [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) (can use double deques too)
 
+### Kadane's Algorithm
+Maximum subarray sum in linear time.
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 ---
 
 ## 🗃️ Folder Structure
