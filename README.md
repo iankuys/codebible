@@ -1,4 +1,4 @@
-# 📘 CodeBible
+# 📘 LeetcodeBible
 
 A curated collection of LeetCode problems and interview questions categorized by algorithmic techniques.  
 This repository serves as a personal reference to master essential concepts and prepare for technical interviews.
