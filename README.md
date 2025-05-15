@@ -31,7 +31,7 @@ Used in Top K, Dijkstra, scheduling problems.
 - [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Solution](NEETCODE%20150/linked_list/merge-k-sorted.py)
 - [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
 - [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Solution](NEETCODE%20150/array/topkfreq.py)
-- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | [Solution](NEETCODE%20150/binary_search/koko_eating_bananas.py)
+- [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Solution](TAGGED/Barclays/kSmallestPairs.py)
 
 ### 🧠 HashMaps
 Frequency tracking, indexing, sliding windows.
@@ -67,6 +67,7 @@ For sorted data, peak finding, min/max condition.
 - [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [Solution](NEETCODE%20150/binary_search/search_rotated_sorted_arr.py)
 - [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Solution](NEETCODE%20150/binary_search/search_2d.py)
+- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | [Solution](NEETCODE%20150/binary_search/koko_eating_bananas.py)
 
 ### 🌳 Trees & Graphs (DFS/BFS)
 Traverse, search, clone, or evaluate structured data.
@@ -199,6 +200,13 @@ Maximum subarray sum in linear time.
 Mathematical problems and geometric algorithms.
 - [Happy Number](https://leetcode.com/problems/happy-number/) | [Solution](NEETCODE%20150/math%26geom/202-happynum.py)
 - [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [Solution](NEETCODE%20150/math%26geom/43-multiplystrings.py)
+
+### Trie 
+Efficient for prefix-based searches.
+- [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Solution](NEETCODE%20150/trie/implementTrie.py)
+- [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
+- [Replace Words](https://leetcode.com/problems/replace-words/)
+- [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-words-ii/)
 
 ## 📚 Additional Questions
 
