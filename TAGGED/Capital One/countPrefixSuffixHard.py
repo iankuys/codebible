@@ -20,7 +20,7 @@ i = 0 and j = 3 because isPrefixAndSuffix("a", "aa") is true.
 i = 1 and j = 2 because isPrefixAndSuffix("aba", "ababa") is true.
 Therefore, the answer is 4.
 """
-# korean chicls solution
+# korean solution
 class Trie:
     def __init__(self):
         self.root = {}
