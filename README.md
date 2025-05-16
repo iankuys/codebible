@@ -206,7 +206,7 @@ Efficient for prefix-based searches.
 - [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Solution](NEETCODE%20150/trie/implementTrie.py)
 - [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
 - [Replace Words](https://leetcode.com/problems/replace-words/)
-- [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-words-ii/)
+- [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-words-ii/) | [Solution](TAGGED/Capital%20One/countPrefixSuffixHard.py)
 
 ## 📚 Additional Questions
 
