@@ -225,5 +225,88 @@ Efficient for prefix-based searches.
 
 ---
 
-## ��️ Folder Structure
+## 🏷️ Tagged Questions by Company
+
+### 🏦 Barclays
+- [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Solution](TAGGED/Barclays/kSmallestPairs.py)
+- [Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) | [Solution](TAGGED/Barclays/countSubmatricesWithTop-LeftElement.py)
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](TAGGED/Barclays/maxSubarray.py)
+- [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Solution](TAGGED/Barclays/rangeSumQuery.py)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Solution](TAGGED/Barclays/numIslands.py)
+- [Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](TAGGED/Barclays/twoSum.py)
+
+### 💳 Capital One
+- [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/) | [Solution](TAGGED/Capital%20One/countPrefixSuffixHard.py)
+- [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/) | [Solution](TAGGED/Capital%20One/countBlackBlocks.py)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Solution](TAGGED/Capital%20One/numIslands.py)
+- [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/) | [Solution](TAGGED/Capital%20One/countPrefixSuffixEasy.py)
+- [Count Operations to Obtain Zero](https://leetcode.com/problems/count-operations-to-obtain-zero/) | [Solution](TAGGED/Capital%20One/countOperations.py)
+- [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Solution](TAGGED/Capital%20One/rotateImage.py)
+- [Candy Crush](https://leetcode.com/problems/candy-crush/) | [Solution](TAGGED/Capital%20One/candyCrush.py)
+- [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Solution](TAGGED/Capital%20One/spiralOrder.py)
+- [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Solution](TAGGED/Capital%20One/moveZeros.py)
+- [Design File System](https://leetcode.com/problems/design-file-system/) | [Solution](TAGGED/Capital%20One/designFileSystem.py)
+- [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [Solution](TAGGED/Capital%20One/longestContinuousSubarrayWLimit.py)
+- [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Solution](TAGGED/Capital%20One/simplify_path.py)
+- [Minimum Operations to Write the Letter Y on a Grid](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | [Solution](TAGGED/Capital%20One/minimumOperationsToWriteY.py)
+- [Text Justification](https://leetcode.com/problems/text-justification/) | [Solution](TAGGED/Capital%20One/textJustification.py)
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Solution](TAGGED/Capital%20One/bestTimeToBuySellStock.py)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Solution](TAGGED/Capital%20One/isPalindrome.py)
+- [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [Solution](TAGGED/Capital%20One/SimpleBankSystem.py)
+
+---
+
+## 📂 Folder Structure
+
+This repository is organized into several key directories:
+
+### Main Collections
+
+- **NEETCODE 150/**: Solutions to the NeetCode 150 problem set, organized by algorithm type:
+  - `array/`: Array manipulation problems
+  - `backtracking/`: Recursive exploration problems
+  - `binary_search/`: Binary search implementations
+  - `bit_manipulation/`: Bit-level operations
+  - `graphs/`: Graph traversal and algorithms
+  - `greedy/`: Greedy algorithm solutions
+  - `intervals/`: Interval-based problems
+  - `linked_list/`: Linked list operations
+  - `math&geom/`: Mathematical and geometric problems
+  - `priority_queue/`: Heap-based solutions
+  - `sliding_window/`: Sliding window technique
+  - `stack/`: Stack implementations
+  - `tree/`: Binary tree problems
+  - `trie/`: Prefix tree implementations
+  - `two pointers/`: Two-pointer technique
+  - `1d/`: One-dimensional dynamic programming
+  - `2d/`: Two-dimensional dynamic programming
+
+- **OG BIBLE/**: Original collection of algorithm implementations:
+  - `array-matrix/`: Array and matrix operations
+  - `binary search/`: Binary search algorithms
+  - `dfsandbfs/`: Depth-first and breadth-first search
+  - `dynamicProg/`: Dynamic programming solutions
+  - `linked_list/`: Linked list problems
+  - `pointers/`: Pointer manipulation techniques
+  - `sorting/`: Sorting algorithms
+  - `stack/`: Stack-based solutions
+  - `string/`: String manipulation problems
+  - `tree&graphs/`: Tree and graph algorithms
+
+- **TAGGED/**: Problems categorized by companies:
+  - `Barclays/`: Problems frequently asked by Barclays
+  - `Capital One/`: Problems frequently asked by Capital One
+
+- **OAs/**: Online Assessment problems from various companies
+
+### File Naming Convention
+
+Files are generally named after the problem they solve, often including the LeetCode problem number or a descriptive name that reflects the algorithm used.
+
+### How to Navigate
+
+1. If you're preparing for a specific company, check the `TAGGED/` directory first
+2. For systematic algorithm practice, use the `NEETCODE 150/` directory
+3. For additional problems and implementations, explore the `OG BIBLE/` directory
+4. For recent online assessment questions, refer to the `OAs/` directory
 
