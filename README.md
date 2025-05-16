@@ -20,11 +20,15 @@ Efficient for range query pre-processing.
 ### 🔢 Matrices
 Used for 2D problems, often with prefix sums.
 - [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Solution](OG%20BIBLE/array-matrix/set-matrix-zero.py)
-- [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Solution](OG%20BIBLE/array-matrix/rotate_matrix.py)
-- [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Solution](OG%20BIBLE/array-matrix/54-spiralmatrix.py)
-- [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
+- [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Solution](TAGGED/Capital%20One/rotateImage.py)
+- [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Solution](TAGGED/Capital%20One/spiralOrder.py)
+- [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Solution](NEETCODE%20150/2d/maximalRectangle.py)
+- [Maximal Square](https://leetcode.com/problems/maximal-square/) | [Solution](NEETCODE%20150/2d/maximalSquare.py)
 - [CandyCrush](https://leetcode.com/problems/candy-crush/) | [Solution](TAGGED/Capital%20One/candyCrush.py)
 - [Where Will the Ball Fall](https://leetcode.com/problems/where-will-the-ball-fall/) | [Solution](OG%20BIBLE/array-matrix/1706-wherewilltheballfall.py)
+- [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Solution](TAGGED/Capital%20One/moveZeros.py)
+- [Number of Black Blocks](https://leetcode.com/problems/number-of-black-blocks/) | [Solution](TAGGED/Capital%20One/countBlackBlocks.py)
+- [Minimum Operations to Write the Letter Y on a Grid](https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/) | [Solution](TAGGED/Capital%20One/minimumOperationsToWriteY.py)
 
 ### 🔺 Heaps / Priority Queue
 Used in Top K, Dijkstra, scheduling problems.
@@ -35,7 +39,7 @@ Used in Top K, Dijkstra, scheduling problems.
 
 ### 🧠 HashMaps
 Frequency tracking, indexing, sliding windows.
-- [Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](NEETCODE%20150/array/twosum.py)
+- [Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](TAGGED/Barclays/twoSum.py)
 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Solution](NEETCODE%20150/array/group_anagrams.py)
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Solution](NEETCODE%20150/sliding_window/3-longestsubstr.py)
 - [Design File System](https://leetcode.com/problems/design-file-system/) | [Solution](TAGGED/Capital%20One/designFileSystem.py)
@@ -72,7 +76,7 @@ For sorted data, peak finding, min/max condition.
 ### 🌳 Trees & Graphs (DFS/BFS)
 Traverse, search, clone, or evaluate structured data.
 - [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
-- [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Solution](NEETCODE%20150/graphs/numberOfIslands.py)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Solution](TAGGED/Barclays/numIslands.py)
 - [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Solution](OG%20BIBLE/tree%26graphs/133-clonegraph.py)
 - [Course Schedule](https://leetcode.com/problems/course-schedule/) | [Solution](NEETCODE%20150/graphs/course_schedule.py)
 - [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Solution](NEETCODE%20150/graphs/210-courseschedule2.py)
@@ -131,7 +135,8 @@ Recursive exploration of all possibilities.
 Locally optimal decisions lead to global optimum.
 - [Jump Game](https://leetcode.com/problems/jump-game/) | [Solution](NEETCODE%20150/greedy/jumpgame.py)
 - [Partition Labels](https://leetcode.com/problems/partition-labels/) | [Solution](NEETCODE%20150/greedy/partition_labels.py)
-- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](NEETCODE%20150/greedy/max_subarray.py)
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Solution](TAGGED/Barclays/maxSubarray.py)
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Solution](TAGGED/Capital%20One/bestTimeToBuySellStock.py)
 
 ### 🌀 Double Deque
 Maintains sliding windows, monotonic queues.
@@ -154,12 +159,14 @@ Problems involving ranges and overlapping segments.
 
 ### 📝 String Manipulation
 String processing and pattern matching.
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Solution](OG%20BIBLE/string/palindrome.py)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Solution](TAGGED/Capital%20One/isPalindrome.py)
 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Solution](OG%20BIBLE/string/5-longestpalindrome.py)
 - [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Solution](OG%20BIBLE/string/14-longestcommonprefix.py)
 - [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | [Solution](OG%20BIBLE/string/205.py)
 - [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Solution](OG%20BIBLE/string/392-IsSubsequence.py)
 - [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Solution](OG%20BIBLE/string/409.py)
+- [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Solution](TAGGED/Capital%20One/simplify_path.py)
+- [Text Justification](https://leetcode.com/problems/text-justification/) | [Solution](TAGGED/Capital%20One/textJustification.py)
 
 ## 🧩 More Difficult Techniques
 
@@ -176,7 +183,7 @@ Used for complex conditions or multiple pointers.
 ### 🧱 Monotonic Stack
 Next greater/smaller, histogram problems.
 - [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [Solution](NEETCODE%20150/stack/daily_temperature.py)
-- [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+- [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Solution](TAGGED/Capital%20One/largestRectangleInHistogram.py)
 - [Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Solution](NEETCODE%20150/stack/validParentheses.py)
 - [Min Stack](https://leetcode.com/problems/min-stack/) | [Solution](NEETCODE%20150/stack/minStack.py)
@@ -206,7 +213,8 @@ Efficient for prefix-based searches.
 - [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Solution](NEETCODE%20150/trie/implementTrie.py)
 - [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
 - [Replace Words](https://leetcode.com/problems/replace-words/)
-- [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-words-ii/) | [Solution](TAGGED/Capital%20One/countPrefixSuffixHard.py)
+- [Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/) | [Solution](TAGGED/Capital%20One/countPrefixSuffixHard.py)
+- [Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/) | [Solution](TAGGED/Capital%20One/countPrefixSuffixEasy.py)
 
 ## 📚 Additional Questions
 
@@ -253,6 +261,7 @@ Efficient for prefix-based searches.
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Solution](TAGGED/Capital%20One/bestTimeToBuySellStock.py)
 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Solution](TAGGED/Capital%20One/isPalindrome.py)
 - [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [Solution](TAGGED/Capital%20One/SimpleBankSystem.py)
+- [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Solution](TAGGED/Capital%20One/largestRectangleInHistogram.py)
 
 ---
 
