@@ -34,6 +34,8 @@ class Solution:
 
         while (j < len(prices)):
             # if price cur day is higher than later day, then we move on
+            # move to the new minimum whenever we can
+            # if there is a larger maximum later on the new min will be better for it anyway
             profit = prices[j] - prices[i]
             if profit < 0:
                 i += 1

@@ -19,6 +19,33 @@ Example 2:
 
 Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]
 """
+# newest dfs solution by me
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        m = len(matrix)
+        n = len(matrix[0])
+        visited = {}
+        res = []
+
+        def travel(i, j, isReverse):
+            if i < 0 or j < 0 or i >= m or j >= n or (i, j) in visited:
+                return
+            visited[(i, j)] = 1
+            res.append(matrix[i][j])
+
+            if not isReverse:
+                travel(i, j + 1, False)
+                travel(i + 1, j, False)
+                travel(i, j - 1, False)
+                travel(i - 1, j, True)
+            else:
+                travel(i - 1, j, True)
+                travel(i, j + 1, False)
+            
+        travel(0, 0, False)
+        return res
+
+
 # stop thinking about dfs think about loops first
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
