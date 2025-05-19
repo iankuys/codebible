@@ -46,6 +46,8 @@ class Solution:
                 [2, 0, 2, 1, 1]
                 [3, 1, 3, 2, 2]
                 [4, 0, 0, 3, 0]
+                We're turning the 2D matrix into a series of histograms, one for each row.
+                Then for each histogram, you compute the largest rectangle area that can be formed — just like in the "Largest Rectangle in Histogram" problem.
                 """
                 dp[j] = dp[j] + 1 if matrix[i][j] == "1" else 0
 
