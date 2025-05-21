@@ -31,3 +31,30 @@ class Solution:
             count += 1
 
         return count
+   
+# Potential Question
+from typing import List
+
+def collect_sticks(sticks: List[int]) -> List[int]:
+    n = len(sticks)
+    pos = sticks.index(0)
+    left = pos - 1
+    right = pos + 1
+    total = 0
+    turn = 0  # 0 means right, 1 means left
+    result = []
+
+    while total < 100 and (left >= 0 or right < n):
+        if turn % 2 == 0:  # right turn
+            if right < n:
+                total += sticks[right]
+                result.append(right)
+                right += 1
+        else:  # left turn
+            if left >= 0:
+                total += sticks[left]
+                result.append(left)
+                left -= 1
+        turn += 1
+
+    return result

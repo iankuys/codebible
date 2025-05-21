@@ -50,3 +50,49 @@ class Solution:
                 operation = min(operation, op)
 
         return operation
+    
+# Potential OA version
+from typing import List
+
+class Solution:
+    def diagonalPop(self, board: List[List[int]]) -> List[List[int]]:
+        m, n = len(board), len(board[0])
+        done = True
+        to_crush = [[False] * n for _ in range(m)]
+
+        # Diagonal top-left to bottom-right and top-right to bottom-left
+        directions = [(-1, -1), (-1, 1), (1, -1), (1, 1)]
+
+        # May need to negate the board[i][j] to avoid confusion with 0
+        for i in range(m):
+            for j in range(n):
+                if board[i][j] == 0:
+                    continue
+                color = abs(board[i][j])
+                for dx, dy in directions:
+                    x1, y1 = i + dx, j + dy
+                    x2, y2 = i + 2 * dx, j + 2 * dy
+                    if 0 <= x1 < m and 0 <= y1 < n and 0 <= x2 < m and 0 <= y2 < n:
+                        if abs(board[x1][y1]) == color and abs(board[x2][y2]) == color:
+                            to_crush[i][j] = True
+                            to_crush[x1][y1] = True
+                            to_crush[x2][y2] = True
+                            done = False
+
+        # Mark cells to be crushed
+        for i in range(m):
+            for j in range(n):
+                if to_crush[i][j]:
+                    board[i][j] = -abs(board[i][j])
+
+        # Gravity step (same as Candy Crush)
+        for col in range(n):
+            idx = m - 1
+            for row in range(m - 1, -1, -1):
+                if board[row][col] > 0:
+                    board[idx][col] = board[row][col]
+                    idx -= 1
+            for row in range(idx, -1, -1):
+                board[row][col] = 0
+
+        return board if done else self.diagonalPop(board)
