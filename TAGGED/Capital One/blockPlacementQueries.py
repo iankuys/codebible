@@ -14,6 +14,80 @@ For a query of type 2, queries[i] = [2, x, sz]. Check if it is possible to place
 Return a boolean array results, where results[i] is true if you can place the block specified in the ith query of type 2, and false otherwise.
 
 """
+from sortedcontainers import SortedList
+from itertools import pairwise
+
+# Binary Indexed Tree for prefix maximum queries
+class BIT:
+    def __init__(self, n):
+        self.n = n
+        self.l = [0] * (n + 1)  # BIT is 1-indexed, so size is n+1
+
+    def add(self, i, x):
+        i += 1  # shift to 1-based indexing
+        while i <= self.n:
+            self.l[i] = max(self.l[i], x)  # maintain prefix maximum
+            i += i & -i  # move to parent
+
+    def query(self, i):
+        i += 1  # shift to 1-based indexing
+        ans = 0
+        while i:
+            ans = max(ans, self.l[i])  # get max segment size in [0, i]
+            i -= i & -i  # move to ancestor
+        return ans
+
+class Solution:
+    def getResults(self, queries: List[List[int]]) -> List[bool]:
+        sl = SortedList()
+        
+        # Choose a large enough boundary for the number line.
+        # Since coordinates are unbounded, we limit based on query size.
+        n = min(5 * 10**4, len(queries) * 3)
+
+        # Add initial segment from 0 to n (no obstacle yet)
+        sl.add(0)
+        sl.add(n)
+
+        ans = []
+
+        # Preprocess: add all obstacle positions
+        for q in queries:
+            if q[0] == 1:
+                sl.add(q[1])
+
+        # BIT to track maximum segment size that ends at index <= x
+        bit = BIT(n + 1)
+
+        # Build the initial segments between obstacles
+        for x, y in pairwise(sl):
+            bit.add(y, y - x)  # segment [x, y] → length y - x
+
+        # Process queries in reverse to simulate removing cuts
+        for q in reversed(queries):
+            if q[0] == 1:
+                # Undo a cut at x: merge the segments before and after
+                x = q[1]
+                index = sl.index(x)
+                before = sl[index - 1]
+                after = sl[index + 1]
+                sl.remove(x)
+                # Add the merged segment back to BIT
+                bit.add(after, after - before)
+            else:
+                # Type-2 query: Can we place a block of size sz within [0, x]?
+                _, x, sz = q
+                index = sl.bisect_right(x)  # find smallest cut > x
+                before = sl[index - 1]      # left bound of segment containing x
+
+                # Check two possibilities:
+                # 1. Does [before, x] have enough room directly?
+                # 2. Is there a max segment ending at or before `x` that fits?
+                ans.append(bit.query(before) >= sz or x - before >= sz)
+
+        ans.reverse()  # because we processed in reverse
+        return ans
+
 
 # not efficient enough as the queries gets bigger and bigger, hence the gap is bigger we need to use segment tree
 from sortedcontainers import SortedList

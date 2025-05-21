@@ -17,14 +17,32 @@ Return a 0-indexed integer array arr of size 5 such that arr[i] is the number of
 # optimized chatgpt solution
 from collections import defaultdict
 
+class Solution:
+    def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
+        blacks = defaultdict(int)
+        
+        for row, col in coordinates:
+            for dx in [0, -1]:
+                for dy in [0, -1]:
+                    x, y = row + dx, col + dy
+                    if 0 <= x < m - 1 and 0 <= y < n - 1:
+                        blacks[(x, y)] = 1 + blacks.get((x, y), 0)
+
+        res = [0] * 5
+        res[0] = (m - 1) * (n - 1)
+
+        for black in blacks.values():
+            res[black] += 1
+            res[0] -= 1
+
+        return res
+    
 # redo with comments
 class Solution:
     def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
-        
-        black_cells = set((r, c) for r, c in coordinates)
         block_count = defaultdict(int)
         
-        for black_cell in black_cells:
+        for black_cell in coordinates:
             for dx in [0, -1]:
                 for dy in [0, -1]:
                     # we are only calculating the blocks that will exist in every black cell
@@ -44,10 +62,9 @@ class Solution:
     
 class Solution:
     def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
-        black_cells = set((r, c) for r, c in coordinates)
         block_count = defaultdict(int)
 
-        for r, c in black_cells:
+        for r, c in coordinates:
             # A black cell can be part of up to 4 different 2x2 blocks
             for dr in [0, -1]:
                 for dc in [0, -1]:
