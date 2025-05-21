@@ -262,6 +262,9 @@ Efficient for prefix-based searches.
 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [Solution](TAGGED/Capital%20One/isPalindrome.py)
 - [Simple Bank System](https://leetcode.com/problems/simple-bank-system/) | [Solution](TAGGED/Capital%20One/SimpleBankSystem.py)
 - [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Solution](TAGGED/Capital%20One/largestRectangleInHistogram.py)
+- [Number of Subarrays That Match a Pattern](https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern/) | [Solution](TAGGED/Capital%20One/numberOfSubarraysThatMatchPattern.py)
+- [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [Solution](TAGGED/Capital%20One/blockPlacementQueries.py)
+- [Number of Adjacent Pairs With Same Color](https://leetcode.com/problems/number-of-adjacent-pairs-with-same-color/) | [Solution](TAGGED/Capital%20One/numberOfAdjacentPairsWithSameColor.py)
 
 ---
 
