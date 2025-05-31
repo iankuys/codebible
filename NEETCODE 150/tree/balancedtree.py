@@ -6,6 +6,26 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# much more intuitive solution (solved by myself)
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        self.res = True
+        def recurse(cur):
+
+            if not cur:
+                return 0 
+
+            left = recurse(cur.left)
+            right = recurse(cur.right)
+
+            self.res = self.res and abs(left - right) <= 1
+
+            return 1 + max(left, right)
+
+        recurse(root)
+        return self.res
+    
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
 

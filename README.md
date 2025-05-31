@@ -266,6 +266,18 @@ Efficient for prefix-based searches.
 - [Block Placement Queries](https://leetcode.com/problems/block-placement-queries/) | [Solution](TAGGED/Capital%20One/blockPlacementQueries.py)
 - [Number of Adjacent Pairs With Same Color](https://leetcode.com/problems/number-of-adjacent-pairs-with-same-color/) | [Solution](TAGGED/Capital%20One/numberOfAdjacentPairsWithSameColor.py)
 
+### 🔍 Google
+- [Move Pieces to Obtain String](https://leetcode.com/problems/move-pieces-to-obtain-string/) | [Solution](TAGGED/Google/movePiecesObtainString.py)
+- [LRU Cache](https://leetcode.com/problems/lru-cache/) | [Solution](TAGGED/Google/lruCache.py)
+
+### 🧑‍💻 Meta
+- [Maximum Swap](https://leetcode.com/problems/maximum-swap/) | [Solution](TAGGED/Meta/maximumSwap.py)
+- [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Solution](TAGGED/Meta/Tree/lowestCommonAncestorBTree.py)
+- [Find Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Solution](TAGGED/Meta/Heap/findKthLargest.py)
+- [Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/) | [Solution](TAGGED/Meta/Array/sparseMatrix.py)
+- [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [Solution](TAGGED/Meta/TwoPointers/validPalindrome2.py)
+- [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Solution](TAGGED/Meta/BinarySearch/findPeakElement.py)
+
 ---
 
 ## 📂 Folder Structure

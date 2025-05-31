@@ -10,6 +10,43 @@
 
 # We will rely upon the invariant of the BST to solve the exercise. 
 
+# works for both BST and BT
+class Solution:
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+        self.ans = None
+
+        def recurse(cur):
+            if not cur:
+                return False
+
+            left = recurse(cur.left)
+            right = recurse(cur.right)
+            mid = cur.val == p.val or cur.val == q.val
+
+            if left + right + mid >= 2:
+                self.ans = cur
+            
+            return mid or left or right
+        
+        recurse(root)
+        return self.ans
+    
+# using BST property
+class Solution:
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+        
+        def recurse(cur):
+            if not cur:
+                return None
+            if p.val > cur.val and q.val > cur.val:
+                return recurse(cur.right)
+            elif p.val < cur.val and q.val < cur.val:
+                return recurse(cur.left)
+            else:
+                return cur
+
+        return recurse(root)
+
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         

@@ -4,6 +4,26 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# mine but new solution
+class Solution:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        p_arr = []
+        q_arr = []
+
+        def recurse(cur, arr):
+            if not cur:
+                arr.append(None)
+                return
+            arr.append(cur.val)
+            recurse(cur.left, arr)
+            recurse(cur.right, arr)
+        
+        recurse(p, p_arr)
+        recurse(q, q_arr)
+
+        return p_arr == q_arr
+    
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         array1 = []
