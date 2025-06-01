@@ -26,7 +26,7 @@ class Solution:
     #   Best case: O(n) - tree traversal where h is height
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(h)
+    # Space Complexity: O(n)
     def verticalOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         
         if not root:

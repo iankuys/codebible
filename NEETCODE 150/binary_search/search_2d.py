@@ -12,6 +12,11 @@
 
 # new and better solution by me 2025
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - target found immediately
+    #   Average case: O(log(m × n))
+    #   Worst case: O(log(m × n))
+    # Space Complexity: O(1)
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         top = 0
         down = len(matrix) - 1
@@ -46,6 +51,11 @@ class Solution:
         return False # target not found in any row
     
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - target found immediately
+    #   Average case: O(log(m × n))
+    #   Worst case: O(log(m × n))
+    # Space Complexity: O(1)
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         
         low = 0

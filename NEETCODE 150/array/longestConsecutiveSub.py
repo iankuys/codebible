@@ -1,4 +1,5 @@
 # Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+# Link: https://leetcode.com/problems/longest-consecutive-sequence/
 
 # You must write an algorithm that runs in O(n) time.
 
@@ -19,7 +20,7 @@ class Solution:
     #   Best case: O(n) - linear scan
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Space Complexity: O(n)
     def longestConsecutive(self, nums: List[int]) -> int:
         
         sorted_nums = sorted(set(nums))
@@ -43,7 +44,7 @@ class Solution:
     #   Best case: O(n) - linear scan
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Space Complexity: O(n)
     def longestConsecutive(self, nums: List[int]) -> int:
         i = 0
         k = 0
@@ -72,7 +73,7 @@ class Solution:
     #   Best case: O(n) - linear scan
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Space Complexity: O(n)
     def longestConsecutive(self, nums: List[int]) -> int:
         longest = 0
         num_set = set(nums)
@@ -92,7 +93,7 @@ class Solution:
     #   Best case: O(n) - linear scan
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Space Complexity: O(n)
     def longestConsecutive(self, nums: List[int]) -> int:
         unique_nums = set(nums)
         sorted_unique_nums = sorted(unique_nums)

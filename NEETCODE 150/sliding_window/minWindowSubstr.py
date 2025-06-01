@@ -17,10 +17,10 @@
 # https://leetcode.com/problems/minimum-window-substring/description/
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+    #   Best case: O(n) - sliding window
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(k)
     def minWindow(self, s: str, t: str) -> str:
         if t == "":
             return ""

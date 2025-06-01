@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/valid-word-abbreviation/
 """
 408. Valid Word Abbreviation
 A string can be abbreviated by replacing any number of non-adjacent, non-empty substrings with their lengths. The lengths should not have leading zeros.

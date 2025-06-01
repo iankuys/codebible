@@ -1,12 +1,13 @@
 # Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+# Link: https://leetcode.com/problems/set-matrix-zeroes/
 
 # You must do it in place.
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+    #   Best case: O(m × n) - two-pass matrix traversal
+    #   Average case: O(m × n)
+    #   Worst case: O(m × n)
+    # Space Complexity: O(m + n)
     def setZeroes(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.

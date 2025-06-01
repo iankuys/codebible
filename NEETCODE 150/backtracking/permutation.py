@@ -1,4 +1,5 @@
 # Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.
+# Link: https://leetcode.com/problems/permutations/
 
 # Example 1:
 
@@ -7,10 +8,10 @@
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear operation
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+    #   Best case: O(n!) - backtracking to generate all permutations
+    #   Average case: O(n!)
+    #   Worst case: O(n!)
+    # Space Complexity: O(n)
     def permute(self, nums: List[int]) -> List[List[int]]:
         
         res = []

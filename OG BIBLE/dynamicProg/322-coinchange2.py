@@ -1,10 +1,12 @@
-# LeetCode Problem 322: https://leetcode.com/problems/
+# Link: https://leetcode.com/problems/coin-change/
+from typing import List
+
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+    #   Best case: O(amount × coins) - DP with nested loops
+    #   Average case: O(amount × coins)
+    #   Worst case: O(amount × coins)
+    # Space Complexity: O(amount)
     def coinChange(self, coins: 'List[int]', amount: 'int') -> 'int':
         dp = [0] + [float('inf') for i in range(amount)]
         for i in range(1, amount+1):

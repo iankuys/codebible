@@ -1,4 +1,5 @@
 """
+# Link: https://leetcode.com/problems/trapping-rain-water/
 Trapping Rain Water
 Solved 
 You are given an array non-negative integers height which represent an elevation map. Each value height[i] represents the height of a bar, which has a width of 1.
@@ -14,9 +15,9 @@ Output: 9
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(1) - binary search
-    #   Average case: O(log n)
-    #   Worst case: O(log n)
+#   Best case: O(n) - two pointers scan
+#   Average case: O(n)
+#   Worst case: O(n)
     # Space Complexity: O(1)
     def trap(self, height: List[int]) -> int:
         if not height:

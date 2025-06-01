@@ -8,10 +8,10 @@
 # use dijkstra's
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+#   Best case: O((V + E) log V) - Dijkstra with min heap
+#   Average case: O((V + E) log V)
+#   Worst case: O((V + E) log V)
+# Space Complexity: O(V)
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
         edges = collections.defaultdict(list)
         for u, v, w in times:

@@ -20,9 +20,9 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
 # mine
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear operation
-    #   Average case: O(n)
-    #   Worst case: O(n)
+    #   Best case: O(n²) - matrix transpose and reflection
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
     # Space Complexity: O(1)
     def rotate(self, matrix: List[List[int]]) -> None:
         """
@@ -44,9 +44,9 @@ class Solution:
                 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear operation
-    #   Average case: O(n)
-    #   Worst case: O(n)
+    #   Best case: O(n²) - matrix transpose and reflection
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
     # Space Complexity: O(1)
     def rotate(self, matrix: List[List[int]]) -> None:
         self.transpose(matrix)

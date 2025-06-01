@@ -13,10 +13,10 @@ Explanation: The maximal rectangle is shown in the above picture.
 class Solution:
     # Get the maximum area in a histogram given its heights
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+#   Best case: O(m × n) - process each cell with histogram
+#   Average case: O(m × n)
+#   Worst case: O(m × n)
+# Space Complexity: O(n)
     def largestRectangleArea(self, heights: List[int]) -> int:
         maxArea = 0
         stack = []
@@ -64,10 +64,10 @@ class Solution:
 # using dfs and histogram
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+#   Best case: O(m × n) - process each cell with histogram
+#   Average case: O(m × n)
+#   Worst case: O(m × n)
+# Space Complexity: O(n)
     def maximalRectangle(self, matrix: List[List[str]]) -> int:
         
         m = len(matrix)

@@ -19,10 +19,10 @@ Output: 4
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+    #   Best case: O(n + k log n) - heapify O(n) + k heap pops O(k log n)
+    #   Average case: O(n + k log n)
+    #   Worst case: O(n + k log n)
+    # Space Complexity: O(n)
     def findKthLargest(self, nums: List[int], k: int) -> int:
         heap = [ -1 * num for num in nums]
         heapq.heapify(heap)

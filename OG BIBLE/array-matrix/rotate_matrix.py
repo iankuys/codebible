@@ -4,7 +4,7 @@
 # You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
+    #   Best case: O(n²) - matrix transpose and reflection
     #   Average case: O(n²)
     #   Worst case: O(n²)
     # Space Complexity: O(1)
@@ -27,7 +27,7 @@ class Solution:
 # CHEESE MOVE
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
+    #   Best case: O(n²) - matrix transpose and reflection
     #   Average case: O(n²)
     #   Worst case: O(n²)
     # Space Complexity: O(1)

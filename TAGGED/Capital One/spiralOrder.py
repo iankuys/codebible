@@ -23,10 +23,10 @@ Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]
 # newest dfs solution by me
 class Solution:
     # Time Complexity:
-    #   Best case: O(V + E) - graph traversal
-    #   Average case: O(V + E)
-    #   Worst case: O(V + E)
-    # Space Complexity: O(1)
+    #   Best case: O(m × n) - visit each matrix cell once
+    #   Average case: O(m × n)
+    #   Worst case: O(m × n)
+    # Space Complexity: O(m × n)
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         m = len(matrix)
         n = len(matrix[0])
@@ -55,10 +55,10 @@ class Solution:
 # stop thinking about dfs think about loops first
 class Solution:
     # Time Complexity:
-    #   Best case: O(V + E) - graph traversal
-    #   Average case: O(V + E)
-    #   Worst case: O(V + E)
-    # Space Complexity: O(1)
+    #   Best case: O(m × n) - visit each matrix cell once
+    #   Average case: O(m × n)
+    #   Worst case: O(m × n)
+    # Space Complexity: O(m × n)
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         visited = {}
         res = []
@@ -94,10 +94,10 @@ class Solution:
 # old dfs solution
 class Solution:
     # Time Complexity:
-    #   Best case: O(V + E) - graph traversal
-    #   Average case: O(V + E)
-    #   Worst case: O(V + E)
-    # Space Complexity: O(1)
+    #   Best case: O(m × n) - visit each matrix cell once
+    #   Average case: O(m × n)
+    #   Worst case: O(m × n)
+    # Space Complexity: O(m × n)
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         ans = []
         seen = set()

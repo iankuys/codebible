@@ -19,10 +19,10 @@ from collections import defaultdict
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
-    #   Average case: O(n²)
-    #   Worst case: O(n²)
-    # Space Complexity: O(1)
+    #   Best case: O(n + k log n) - heapify O(n) + k heap pops O(k log n)
+    #   Average case: O(n + k log n)
+    #   Worst case: O(n + k log n)
+    # Space Complexity: O(n)
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         
         origin = (0,0)

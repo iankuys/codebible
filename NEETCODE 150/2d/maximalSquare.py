@@ -9,10 +9,10 @@ Output: 4
 """
 class Solution:
     # Time Complexity:
-    #   Best case: O(1) - hash table operations
-    #   Average case: O(1)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+    #   Best case: O(m × n) - dynamic programming with memoization
+    #   Average case: O(m × n)
+    #   Worst case: O(m × n)
+    # Space Complexity: O(m × n)
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         # dynamic programming: bottom up
         # recursive: top down

@@ -88,22 +88,54 @@ class ComplexityAnalyzer:
                 'avg': 'O(1)',
                 'worst': 'O(n)',
                 'description': 'hash table operations'
-            },
-            # Heap patterns
+            },            # Heap patterns
             'heap_operations': {
                 'pattern': r'(heapq\.|heappush|heappop)',
                 'best': 'O(log n)',
                 'avg': 'O(log n)',
                 'worst': 'O(log n)',
                 'description': 'heap operations'
+            },
+            'k_closest_max_heap': {
+                'pattern': r'(heappush.*heappop.*len.*>.*k|if.*len.*>.*k.*heappop)',
+                'best': 'O(n log k)',
+                'avg': 'O(n log k)',
+                'worst': 'O(n log k)',
+                'description': 'k-closest with max heap'
+            },
+            'heapify_pattern': {
+                'pattern': r'heapify',
+                'best': 'O(n)',
+                'avg': 'O(n)',
+                'worst': 'O(n)',
+                'description': 'heap creation'
             }
         }
-    
-    def analyze_function(self, code: str, func_name: str) -> Dict[str, str]:
+      def analyze_function(self, code: str, func_name: str) -> Dict[str, str]:
         """Analyze a function and determine its complexity."""
         # Count loops and nesting
         loop_count = len(re.findall(r'for.*in.*:', code))
         while_count = len(re.findall(r'while.*:', code))
+        
+        # Special case: K closest points with max heap pattern
+        if re.search(r'heappush.*heappop.*len.*>.*k|if.*len.*>.*k.*heappop', code, re.DOTALL):
+            return {
+                'best': 'O(n log k)',
+                'avg': 'O(n log k)',
+                'worst': 'O(n log k)',
+                'space': 'O(k)',
+                'description': 'heap operations for each point, heap size limited to k'
+            }
+        
+        # Special case: Min heap with heapify + k pops
+        if re.search(r'heapify.*while.*k.*>.*0|heapify.*for.*range.*k', code, re.DOTALL):
+            return {
+                'best': 'O(n + k log n)',
+                'avg': 'O(n + k log n)',
+                'worst': 'O(n + k log n)',
+                'space': 'O(n)',
+                'description': 'heapify O(n) + k heap pops O(k log n)'
+            }
         
         # Check for specific patterns
         for pattern_name, pattern_info in self.patterns.items():

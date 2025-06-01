@@ -1,4 +1,5 @@
 # You are given an m x n binary matrix grid. An island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
+# Link: https://leetcode.com/problems/max-area-of-island/
 
 # The area of an island is the number of cells with a value 1 in the island.
 
@@ -9,7 +10,7 @@ class Solution:
     #   Best case: O(V + E) - graph traversal
     #   Average case: O(V + E)
     #   Worst case: O(V + E)
-    # Space Complexity: O(1)
+    # Space Complexity: O(m × n)
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         visited = set()
         max_area = 0

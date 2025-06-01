@@ -4,10 +4,10 @@
 # Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 class Solution:
     # Time Complexity:
-    #   Best case: O(1) - hash table operations
-    #   Average case: O(1)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+#   Best case: O(n) - memoized recursion
+#   Average case: O(n)
+#   Worst case: O(n)
+# Space Complexity: O(n)
     def climbStairs(self, n: int) -> int:
         dict = {}
         return self.dfs(n, dict)

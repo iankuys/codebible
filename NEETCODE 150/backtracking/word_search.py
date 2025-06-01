@@ -8,10 +8,10 @@
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(V + E) - graph traversal
-    #   Average case: O(V + E)
-    #   Worst case: O(V + E)
-    # Space Complexity: O(1)
+    #   Best case: O(m × n × 4^L) - backtracking DFS on grid (L = word length)
+    #   Average case: O(m × n × 4^L)
+    #   Worst case: O(m × n × 4^L)
+    # Space Complexity: O(L)
     def exist(self, board: List[List[str]], word: str) -> bool:
         
         visited = set()

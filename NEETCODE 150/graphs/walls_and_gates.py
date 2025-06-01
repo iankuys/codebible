@@ -39,7 +39,7 @@ class Solution:
     #   Best case: O(V + E) - graph traversal
     #   Average case: O(V + E)
     #   Worst case: O(V + E)
-    # Space Complexity: O(1)
+    # Space Complexity: O(m × n)
     def walls_and_gates(self, rooms: List[List[int]]):
         # write your code here
         m = len(rooms)

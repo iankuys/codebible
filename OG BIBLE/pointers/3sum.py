@@ -1,4 +1,5 @@
 """
+# Link: https://leetcode.com/problems/3sum/
 3Sum
 Solved 
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] where nums[i] + nums[j] + nums[k] == 0, and the indices i, j and k are all distinct.
@@ -33,9 +34,9 @@ Explanation: The only possible triplet sums up to 0.
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n log n) - sorting operation
-    #   Average case: O(n log n)
-    #   Worst case: O(n log n)
+    #   Best case: O(n²) - sorting + two pointers nested loops
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
     # Space Complexity: O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
 
@@ -81,9 +82,9 @@ class Solution:
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n log n) - sorting operation
-    #   Average case: O(n log n)
-    #   Worst case: O(n log n)
+    #   Best case: O(n²) - sorting + two pointers nested loops
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
     # Space Complexity: O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         sorted_nums = sorted(nums)

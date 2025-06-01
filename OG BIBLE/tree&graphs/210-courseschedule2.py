@@ -12,10 +12,10 @@ class Solution:
     BLACK = 3
 
     # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+#   Best case: O(V + E) - topological sort with DFS
+#   Average case: O(V + E)
+#   Worst case: O(V + E)
+# Space Complexity: O(V)
     def findOrder(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -69,10 +69,10 @@ class Solution:
 # (MY SOLUTION) doesnt work tho XD
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+#   Best case: O(V + E) - topological sort with DFS
+#   Average case: O(V + E)
+#   Worst case: O(V + E)
+# Space Complexity: O(V)
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         requisites = {}
         result = []

@@ -1,4 +1,5 @@
 # Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.
+# Link: https://leetcode.com/problems/hand-of-straights/
 
 # Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.
 

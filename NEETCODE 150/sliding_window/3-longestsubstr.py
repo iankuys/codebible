@@ -5,10 +5,10 @@
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear scan
+    #   Best case: O(n) - sliding window
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Space Complexity: O(k)
     def lengthOfLongestSubstring(self, s: str) -> int:
         # dictionary for repeating characters
         dictionary = {}
@@ -34,10 +34,10 @@ class Solution:
 # 2025 solution
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear scan
+    #   Best case: O(n) - sliding window
     #   Average case: O(n)
     #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Space Complexity: O(k)
     def lengthOfLongestSubstring(self, s: str) -> int:
         repeat = {}
         start = 0

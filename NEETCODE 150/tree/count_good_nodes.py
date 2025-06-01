@@ -1,4 +1,5 @@
 # Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X.
+# Link: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 # Return the number of good nodes in the binary tree.
 # Example 1:
 # Input: root = [3,1,4,3,null,1,5]

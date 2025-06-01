@@ -4,10 +4,10 @@
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - tree traversal where h is height
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(h)
+#   Best case: O(n) - two pointers scan
+#   Average case: O(n)
+#   Worst case: O(n)
+# Space Complexity: O(1)
     def middleNode(self, head):
         slow = fast = head
         while fast and fast.next:

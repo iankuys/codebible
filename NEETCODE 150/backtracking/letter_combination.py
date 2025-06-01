@@ -1,3 +1,4 @@
+from typing import List
 # use dictionary structure to store the available letters of each number
 # using backtracking recursion to get the combination of letters of every digit starting from the first digit
 # iterate through all the letters for digit in dictionary and when the length of the combination and the digits are the same, we will append it into our result
@@ -8,6 +9,11 @@
 # https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(4^n) - backtracking phone letter combinations
+    #   Average case: O(4^n)
+    #   Worst case: O(4^n)
+    # Space Complexity: O(n)
     def letterCombinations(self, digits: str) -> List[str]:
         digit_to_letters = {
             "1": [],

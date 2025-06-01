@@ -1,4 +1,5 @@
 # Given a string s, return the longest 
+# Link: https://leetcode.com/problems/longest-palindromic-substring/
 # palindromic
  
 # substring
@@ -16,11 +17,10 @@
 # Input: s = "cbbd"
 # Output: "bb"
  
-class Solution:
-    # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
+class Solution:    # Time Complexity:
+    #   Best case: O(n) - all characters same
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
     # Space Complexity: O(1)
     def longestPalindrome(self, s: str) -> str:
         

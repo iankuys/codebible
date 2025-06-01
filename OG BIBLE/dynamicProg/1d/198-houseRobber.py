@@ -1,4 +1,6 @@
-# LeetCode Problem 198: https://leetcode.com/problems/
+# Link: https://leetcode.com/problems/house-robber/
+from typing import List
+
 # You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
 
 # Example 1:
@@ -9,7 +11,7 @@
 
 class Solution:
     # Time Complexity:
-    #   Best case: O(n²) - nested iteration
+    #   Best case: O(n²) - inefficient nested loop approach
     #   Average case: O(n²)
     #   Worst case: O(n²)
     # Space Complexity: O(1)

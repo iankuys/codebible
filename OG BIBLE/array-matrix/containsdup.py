@@ -1,4 +1,5 @@
 class Solution:
+# Link: https://leetcode.com/problems/contains-duplicate/
     # Time Complexity:
     #   Best case: O(n) - linear scan
     #   Average case: O(n)

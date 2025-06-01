@@ -1,3 +1,4 @@
+from typing import List
 # 33. Search in Rotated Sorted Array
 # There is an integer array nums sorted in ascending order (with distinct values).
 
@@ -14,6 +15,11 @@
 
 # 2025 solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - target found immediately
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def findMin(self, nums: List[int]) -> int:
         left = 0
         right = len(nums) - 1
@@ -37,6 +43,11 @@ class Solution:
         return nums[left]
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - target found immediately  
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def search(self, nums: List[int], target: int) -> int:
         
         l = 0

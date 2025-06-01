@@ -12,9 +12,9 @@
 # 2025 solution
 class Solution:
     # Time Complexity:
-    #   Best case: O(1) - binary search
-    #   Average case: O(log n)
-    #   Worst case: O(log n)
+#   Best case: O(n log max_pile) - binary search with pile validation
+#   Average case: O(n log max_pile)
+#   Worst case: O(n log max_pile)
     # Space Complexity: O(1)
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         rates = range(1, max(piles) + 1)
@@ -41,9 +41,9 @@ class Solution:
     
 class Solution:
     # Time Complexity:
-    #   Best case: O(1) - binary search
-    #   Average case: O(log n)
-    #   Worst case: O(log n)
+#   Best case: O(n log max_pile) - binary search with pile validation
+#   Average case: O(n log max_pile)
+#   Worst case: O(n log max_pile)
     # Space Complexity: O(1)
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         # the larger the faster

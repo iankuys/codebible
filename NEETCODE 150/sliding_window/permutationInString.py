@@ -15,10 +15,10 @@
 # my own O(N^2)
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+    #   Best case: O(n log n) - built-in sorting
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(n)
     def checkInclusion(self, s1: str, s2: str) -> bool:
         # window size will be size of s1
         sorted_s1 = sorted(s1)
@@ -58,10 +58,10 @@ from collections import Counter
 # chatgpt solution easy to follow with counter class and just compare the dictionary
 class Solution:
     # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+    #   Best case: O(n log n) - built-in sorting
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(n)
     def checkInclusion(self, s1: str, s2: str) -> bool:
         if len(s1) > len(s2):
             return False
