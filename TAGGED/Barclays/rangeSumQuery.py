@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/range-sum-query-immutable/
 """
 303. Range Sum Query - Immutable
 Given an integer array nums, handle multiple queries of the following type:

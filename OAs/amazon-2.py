@@ -1,3 +1,4 @@
+# LeetCode Problem 2: https://leetcode.com/problems/
 class Node:
     def __init__(self, data):
         self.data = data

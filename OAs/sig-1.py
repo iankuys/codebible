@@ -1,3 +1,4 @@
+# LeetCode Problem 1: https://leetcode.com/problems/
 # new hash map 
 
 def solution(queryType, query):

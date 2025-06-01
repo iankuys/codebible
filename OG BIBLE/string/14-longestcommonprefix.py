@@ -1,3 +1,4 @@
+# LeetCode Problem 14: https://leetcode.com/problems/
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         prefix = strs[0]

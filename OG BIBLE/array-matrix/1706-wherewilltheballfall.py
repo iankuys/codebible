@@ -1,3 +1,4 @@
+# LeetCode Problem 1706: https://leetcode.com/problems/
 from typing import List
 # Overview
 # It is an interesting problem. We can visualize it as a zig-zag bowling game where the grid represents the bowling surface. Every column is a different lane.

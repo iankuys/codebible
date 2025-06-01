@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/
 """
 2672. Number of Adjacent Elements With the Same Color
 You are given an integer n representing an array colors of length n where all elements are set to 0's meaning uncolored. You are also given a 2D integer array queries where queries[i] = [indexi, colori]. For the ith query:

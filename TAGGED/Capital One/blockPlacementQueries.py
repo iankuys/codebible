@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/block-placement-queries/
 """
 3161. Block Placement Queries
 Attempted

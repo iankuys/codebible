@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/move-pieces-to-obtain-a-string/
 """
 2337. Move Pieces to Obtain a String
 You are given two strings start and target, both of length n. Each string consists only of the characters 'L', 'R', and '_' where:

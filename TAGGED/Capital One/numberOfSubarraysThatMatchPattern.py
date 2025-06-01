@@ -1,3 +1,4 @@
+# Link: https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/
 """
 3034. Number of Subarrays That Match a Pattern I
 You are given a 0-indexed integer array nums of size n, and a 0-indexed integer array pattern of size m consisting of integers -1, 0, and 1.
