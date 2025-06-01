@@ -15,6 +15,11 @@
 
 # https://leetcode.com/problems/partition-labels/description/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def partitionLabels(self, s: str) -> List[int]:
         hmap = {}
         # end tracks whne the last index ends and will partition when end == i

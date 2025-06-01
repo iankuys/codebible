@@ -11,6 +11,11 @@ from typing import List
 
 # There could be one of the two consequences.
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findBall(self, grid: List[List[int]]) -> List[int]:
         array = []
 
@@ -31,6 +36,11 @@ class Solution:
 
 # my solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findBall(self, grid: List[List[int]]) -> List[int]:
         array = []
 

@@ -1,4 +1,9 @@
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def removeDuplicates(self, nums: List[int]) -> int:
         repeated = {}
         i = 0

@@ -30,6 +30,11 @@ Therefore, the size of the longest subarray is 2.
 
 # Leetcode min Heap max Heap
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def longestSubarray(self, nums, limit):
         max_heap = []
         min_heap = []
@@ -60,6 +65,11 @@ class Solution:
     
 # Leetcode 2 dequeus
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def longestSubarray(self, nums: List[int], limit: int) -> int:
         max_deque = deque()
         min_deque = deque()
@@ -93,6 +103,11 @@ class Solution:
 # NOT WORKING
 # mine 55 / 63 testcases passed :( 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def longestSubarray(self, nums: List[int], limit: int) -> int:
         length = 0
         memo = {}

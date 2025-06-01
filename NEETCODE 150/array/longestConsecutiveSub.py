@@ -15,6 +15,11 @@
 # Output: 9
  
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def longestConsecutive(self, nums: List[int]) -> int:
         
         sorted_nums = sorted(set(nums))
@@ -34,6 +39,11 @@ class Solution:
         return max_len
     
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def longestConsecutive(self, nums: List[int]) -> int:
         i = 0
         k = 0
@@ -58,6 +68,11 @@ class Solution:
     
 #faster soluton on leet code ig
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def longestConsecutive(self, nums: List[int]) -> int:
         longest = 0
         num_set = set(nums)
@@ -73,6 +88,11 @@ class Solution:
 
 # i mean it works
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def longestConsecutive(self, nums: List[int]) -> int:
         unique_nums = set(nums)
         sorted_unique_nums = sorted(unique_nums)

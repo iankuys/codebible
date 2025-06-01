@@ -7,6 +7,11 @@
 # https://leetcode.com/problems/word-search/description/
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(V + E) - graph traversal
+    #   Average case: O(V + E)
+    #   Worst case: O(V + E)
+    # Space Complexity: O(1)
     def exist(self, board: List[List[str]], word: str) -> bool:
         
         visited = set()

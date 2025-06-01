@@ -10,6 +10,11 @@
 # - Pay 15 and climb two steps to reach the top.
 # The total cost is 15.
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         
         dp = [float("inf")] * (len(cost) + 1)

@@ -42,6 +42,11 @@ class Trie:
         return indices
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countPrefixSuffixPairs(self, words: List[str]) -> int:
         pref = Trie()
         suf = Trie()
@@ -93,6 +98,11 @@ class Trie:
         return seen
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countPrefixSuffixPairs(self, words: List[str]) -> int:
         prefixTrie = Trie()
         suffixTrie = Trie()

@@ -6,6 +6,11 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         
         if not head:

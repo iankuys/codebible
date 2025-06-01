@@ -32,6 +32,11 @@ Explanation: The only possible triplet sums up to 0.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
 
         # sorted nums will look like [-4,-1,-1,0,1,2]
@@ -75,6 +80,11 @@ class Solution:
         return res
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         sorted_nums = sorted(nums)
         i = 0

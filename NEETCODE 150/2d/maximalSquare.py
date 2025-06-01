@@ -8,6 +8,11 @@ Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1
 Output: 4
 """
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         # dynamic programming: bottom up
         # recursive: top down

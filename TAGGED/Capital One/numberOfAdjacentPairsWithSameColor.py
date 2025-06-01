@@ -26,6 +26,11 @@ After the 5th query colors = [2,1,1,1]. The count of adjacent pairs with the sam
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def colorTheArray(self, n: int, queries: List[List[int]]) -> List[int]:
         colors = [0] * n
         res = []

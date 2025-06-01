@@ -4,6 +4,11 @@
 
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         n = len(nums)
         min_len = float('inf')
@@ -24,6 +29,11 @@ from typing import List
 
 # my own solution but doesnt work
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         n = len(nums)
         min_len = 99999999

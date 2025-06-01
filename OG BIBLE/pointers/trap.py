@@ -13,6 +13,11 @@ Output: 9
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def trap(self, height: List[int]) -> int:
         if not height:
             return 0

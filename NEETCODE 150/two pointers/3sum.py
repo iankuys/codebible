@@ -37,6 +37,11 @@ Explanation: The only possible triplet sums up to 0.
 #  i  k      j
 # nums[i] = -(nums[j] + nums[k])
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         sorted_nums = sorted(nums)
         i = 0

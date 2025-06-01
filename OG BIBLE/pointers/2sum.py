@@ -10,6 +10,11 @@
 # Explanation: The sum of 2 and 7 is 9. Therefore, index1 = 1, index2 = 2. We return [1, 2].
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
     
         i = 0

@@ -10,6 +10,11 @@
 # Input: nums = [3,2,1,5,6,4], k = 2
 # Output: 5
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findKthLargest(self, nums: List[int], k: int) -> int:
         reveresed_arr = [-1 * num for num in nums]
         heapq.heapify(reveresed_arr)

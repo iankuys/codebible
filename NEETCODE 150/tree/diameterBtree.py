@@ -11,6 +11,11 @@
 #         self.right = right
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         self.diameter = 0
 
@@ -31,6 +36,11 @@ class Solution:
 
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def __init__(self):
         self.diameter = 0  # stores the maximum diameter calculated
          

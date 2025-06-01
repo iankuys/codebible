@@ -12,6 +12,11 @@ Explanation: The LCA of nodes 5 and 1 is 3.
 """
 class Solution:
 
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def __init__(self):
         # Variable to store LCA node.
         self.ans = None

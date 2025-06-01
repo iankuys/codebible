@@ -10,6 +10,11 @@
 
 # my solution but optimizied
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
 
         nums.sort()
@@ -36,6 +41,11 @@ class Solution:
     
 # my solution but slow
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
 
         nums.sort()

@@ -15,6 +15,11 @@
 # rose -> ros (remove 'e')
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def minDistance(self, word1: str, word2: str) -> int:
         dp = [[float("inf") for i in range(len(word2)+1)] for j in range(len(word1) + 1)]
 

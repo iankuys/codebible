@@ -8,6 +8,11 @@
 # Explanation: The longest common subsequence is "ace" and its length is 3.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         dp = [[0 for j in range(len(text2) + 1)] for i in range(len(text1) + 1)]
 

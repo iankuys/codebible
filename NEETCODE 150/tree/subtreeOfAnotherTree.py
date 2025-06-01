@@ -15,6 +15,11 @@ A subtree of a binary tree tree is a tree that consists of a node in tree and al
 #         self.right = right
 
 class Solution:   
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         if not subRoot:
             return True

@@ -5,6 +5,11 @@
 # Output: 3
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         
         def dfs(root, depth):
@@ -17,6 +22,11 @@ class Solution:
         return dfs(root, 0)
     
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         maxim = 0
         depth = 0

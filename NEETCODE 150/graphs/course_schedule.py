@@ -12,6 +12,11 @@
 # To take course 1 you should have finished course 0. So it is possible.
 # https://leetcode.com/problems/course-schedule/description/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         
         adj_list = defaultdict(list)

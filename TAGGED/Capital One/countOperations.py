@@ -20,6 +20,11 @@ So the total number of operations required is 3.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def countOperations(self, num1: int, num2: int) -> int:
         count = 0
 

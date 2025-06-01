@@ -4,6 +4,11 @@
 # Notice that you may not slant the container.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def maxArea(self, height: List[int]) -> int:
         i = 0
         j = len(height) - 1

@@ -10,6 +10,11 @@
 # https://leetcode.com/problems/rotting-oranges/description/
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def orangesRotting(self, grid: List[List[int]]) -> int:
         
         q = deque()

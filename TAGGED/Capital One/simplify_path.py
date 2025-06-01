@@ -32,6 +32,11 @@ Multiple consecutive slashes are replaced by a single one.
 """
 # 2025 my own :)
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def simplifyPath(self, path: str) -> str:
         path_split = path.split("/")
         res = []

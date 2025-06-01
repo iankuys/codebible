@@ -22,6 +22,11 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap = {}
 

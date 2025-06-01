@@ -15,6 +15,11 @@
 # The root-to-leaf path 1->3 represents the number 13.
 # Therefore, sum = 12 + 13 = 25.
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def sumNumbers(self, root: Optional[TreeNode]) -> int:
         sum_str = ""
         sum_arr = []

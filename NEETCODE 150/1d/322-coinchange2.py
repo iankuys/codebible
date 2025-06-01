@@ -9,6 +9,11 @@
 # Explanation: 11 = 5 + 5 + 1
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def coinChange(self, coins: List[int], amount: int) -> int:        
         dp=[math.inf] * (amount+1)
         dp[0]=0

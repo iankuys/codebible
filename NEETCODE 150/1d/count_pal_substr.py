@@ -18,6 +18,11 @@
 # Soln : same as longest palindromic string, each char in str as middle and expand outwards, do same for pali of even len; maybe read up on manachers alg
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def countSubstrings(self, s: str) -> int:
         res = 0
 

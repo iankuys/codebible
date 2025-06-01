@@ -19,6 +19,11 @@
 # https://leetcode.com/problems/last-stone-weight/description/
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def lastStoneWeight(self, stones: List[int]) -> int:
         negated_stones = [-1 * stone for stone in stones]
         heapq.heapify(negated_stones)

@@ -15,6 +15,11 @@
 # Explanation: "raceacar" is not a palindrome.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - single pass through array
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def isPalindrome(self, s: str) -> bool:
         s = [i for i in s.lower() if i.isalnum()]
         return s == s[::-1]

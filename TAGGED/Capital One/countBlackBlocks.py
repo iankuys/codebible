@@ -19,6 +19,11 @@ Return a 0-indexed integer array arr of size 5 such that arr[i] is the number of
 from collections import defaultdict
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
         blacks = defaultdict(int)
         
@@ -40,6 +45,11 @@ class Solution:
     
 # redo with comments
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
         block_count = defaultdict(int)
         
@@ -62,6 +72,11 @@ class Solution:
         return res
     
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
         block_count = defaultdict(int)
 
@@ -86,6 +101,11 @@ class Solution:
 
 # my solution but Time Limit Exceeded 2103 / 2145 testcases passed
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countBlackBlocks(self, m: int, n: int, coordinates: List[List[int]]) -> List[int]:
         
         res = [0] * 5

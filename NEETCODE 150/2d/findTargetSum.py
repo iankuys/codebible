@@ -8,6 +8,11 @@
 # use brute force then caching.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
 
         memo = {}

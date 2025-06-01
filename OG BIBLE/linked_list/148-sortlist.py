@@ -7,6 +7,11 @@
 
 # merge sort
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head or not head.next:
             return head
@@ -45,6 +50,11 @@ class Solution:
 
 # cheesy solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
 
         array = []

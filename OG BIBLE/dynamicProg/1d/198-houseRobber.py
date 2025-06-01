@@ -8,6 +8,11 @@
 # Total amount you can rob = 1 + 3 = 4.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def rob(self, nums: List[int]) -> int:
         largest = [0] * len(nums)
 

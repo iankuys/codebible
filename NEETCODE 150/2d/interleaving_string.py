@@ -19,6 +19,11 @@
 # https://leetcode.com/problems/interleaving-string/description/
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
         
         if len(s1) + len(s2) != len(s3):
@@ -38,6 +43,11 @@ class Solution:
     
 # memoization solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def isInterleave(self, s1: str, s2: str, s3: str) -> bool:
         
         cache = {}

@@ -2,6 +2,11 @@
 # 116. Populating Next Right Pointers in Each Node
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
         return self.bfs(root)
         

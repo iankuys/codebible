@@ -1,5 +1,10 @@
 # LeetCode Problem 54: https://leetcode.com/problems/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         ans = []
         seen = set()
@@ -18,6 +23,11 @@ class Solution:
 
 # doesnt work 17/23 passed
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         visited = set()
         array = []

@@ -6,6 +6,11 @@
 
 # Notice that you may not slant the container.
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def maxArea(self, height: List[int]) -> int:
         n = len(height)
 
@@ -25,6 +30,11 @@ class Solution:
         return max_area
     
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def maxArea(self, heights: List[int]) -> int:
         i = 0
         j = len(heights) - 1

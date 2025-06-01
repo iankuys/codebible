@@ -19,6 +19,11 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
 """
 # mine
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def rotate(self, matrix: List[List[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
@@ -38,6 +43,11 @@ class Solution:
                 matrix[i][j], matrix[i][len(matrix[0]) - j - 1] = matrix[i][len(matrix[0]) - j - 1], matrix[i][j]
                 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def rotate(self, matrix: List[List[int]]) -> None:
         self.transpose(matrix)
         self.reflect(matrix)

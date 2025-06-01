@@ -28,6 +28,11 @@ The judge will then create the linked structure based on these inputs and pass t
 #         self.next = None
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
         
         p1 = headA

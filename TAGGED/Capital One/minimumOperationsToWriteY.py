@@ -21,6 +21,11 @@ Return the minimum number of operations needed to write the letter Y on the grid
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def minimumOperationsToWriteY(self, grid: List[List[int]]) -> int:
         y_counter = {}
         not_y_counter = {}
@@ -56,6 +61,11 @@ class Solution:
 from typing import List
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def diagonalPop(self, board: List[List[int]]) -> List[List[int]]:
         m, n = len(board), len(board[0])
         done = True

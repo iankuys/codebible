@@ -6,6 +6,11 @@
 # Output: 2
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(V + E) - graph traversal
+    #   Average case: O(V + E)
+    #   Worst case: O(V + E)
+    # Space Complexity: O(1)
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         visited = set()
         

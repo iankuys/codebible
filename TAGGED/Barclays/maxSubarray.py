@@ -23,6 +23,11 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def maxSubArray(self, nums: List[int]) -> int:
         cur_sum = max_sum = nums[0]
 

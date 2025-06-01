@@ -12,6 +12,11 @@
 # Explanation: The array cannot be partitioned into equal sum subsets.
  
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def canPartition(self, nums: List[int]) -> bool:
         if sum(nums) % 2:
             return False

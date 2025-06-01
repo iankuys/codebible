@@ -19,6 +19,11 @@ Output: [0,0,0]
 
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
         
         stack = []

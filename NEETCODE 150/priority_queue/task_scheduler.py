@@ -7,6 +7,11 @@
 # https://leetcode.com/problems/task-scheduler/description/
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def leastInterval(self, tasks: List[str], n: int) -> int:
         count = Counter(tasks)
 

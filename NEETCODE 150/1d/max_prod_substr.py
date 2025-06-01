@@ -18,6 +18,11 @@
 # Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def maxProduct(self, nums: List[int]) -> int:
         res = max(nums)
         minCur, maxCur = 1, 1 # min is for negative numbers

@@ -1,5 +1,5 @@
-# Link: https://leetcode.com/problems/binary-tree-vertical-order-traversal/
 """
+Link: https://leetcode.com/problems/binary-tree-vertical-order-traversal/
 314. Binary Tree Vertical Order Traversal
 Given the root of a binary tree, return the vertical order traversal of its nodes' values. (i.e., from top to bottom, column by column).
 
@@ -22,6 +22,11 @@ Output: [[4],[9],[3,0,1],[8],[7]]
 #         self.right = right
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def verticalOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         
         if not root:

@@ -20,6 +20,11 @@
 
 # brute force first then optimize it
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def characterReplacement(self, s: str, k: int) -> int:
 
         # every window look for the most common char, replace the chars with the most common
@@ -44,6 +49,11 @@ class Solution:
     
 # more efficient
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def characterReplacement(self, s: str, k: int) -> int:
         
         count = {}

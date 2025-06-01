@@ -1,5 +1,10 @@
 # LeetCode Problem 43: https://leetcode.com/problems/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def multiply(self, num1: str, num2: str) -> str:
         if num1 == "0" or num2 == "0": 
             return "0"

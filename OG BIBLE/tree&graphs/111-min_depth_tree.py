@@ -8,6 +8,11 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def minDepth(self, root):
             """
             :type root: TreeNode
@@ -42,6 +47,11 @@ class Solution:
 #         self.left = left
 #         self.right = right
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def minDepth(self, root: Optional[TreeNode]) -> int:
         return self.dfs(root, 1) if root else 0
 

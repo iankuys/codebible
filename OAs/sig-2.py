@@ -56,6 +56,11 @@ def solution(board):
 # ,[".",".",".",".","8",".",".","7","9"]]
 # Output: true
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         
         res = []

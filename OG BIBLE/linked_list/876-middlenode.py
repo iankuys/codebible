@@ -3,6 +3,11 @@
 # have to be in the middle node
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def middleNode(self, head):
         slow = fast = head
         while fast and fast.next:

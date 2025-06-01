@@ -7,6 +7,11 @@
 # Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def canJump(self, nums: List[int]) -> bool:
         n = len(nums)
         # Initialize a boolean array to store whether each index is reachable

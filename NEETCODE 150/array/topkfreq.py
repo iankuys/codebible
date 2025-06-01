@@ -10,6 +10,11 @@
 # Output: [1]
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         ele_dict = {}
         output = []
@@ -34,6 +39,11 @@ class Solution:
         return output
             
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         count = {}
         freq = [[] for i in range(len(nums) + 1)]
@@ -53,6 +63,11 @@ class Solution:
 # arr = [[3,1], [2,2], [1,3]]
 # arr.sort()  # sorts to [[1,3], [2,2], [3,1]]
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         count = {}
         for num in nums:

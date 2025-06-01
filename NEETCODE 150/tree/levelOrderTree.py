@@ -17,6 +17,11 @@ Output: [[1],[2,3],[4,5,6,7]]
 #         self.right = right
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         
         res = []

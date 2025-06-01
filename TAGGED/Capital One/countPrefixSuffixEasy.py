@@ -23,6 +23,11 @@ Therefore, the answer is 4.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countPrefixSuffixPairs(self, words: List[str]) -> int:
         
         count = 0

@@ -17,6 +17,11 @@
 # Output: [["a","a","b"],["aa","b"]]
 # fastest solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def partition(self, s: str) -> List[List[str]]:
         
         def detectPalindrome(s):
@@ -44,6 +49,11 @@ class Solution:
 
 # fixed of original solution (86 % faster)
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def partition(self, s: str) -> List[List[str]]:
         
         def detectPalindrome(s):
@@ -74,6 +84,11 @@ class Solution:
     
 # passed 31/32 ran out of time
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def partition(self, s: str) -> List[List[str]]:
         
         def detectPalindrome(s):

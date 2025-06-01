@@ -3,6 +3,11 @@
 # The island receives a lot of rain, and the rain water can flow to neighboring cells directly north, south, east, and west if the neighboring cell's height is less than or equal to the current cell's height. Water can flow from any cell adjacent to an ocean into the ocean.
 # Return a 2D list of grid coordinates result where result[i] = [ri, ci] denotes that rain water can flow from cell (ri, ci) to both the Pacific and Atlantic oceans.
 class Solution:
+    # Time Complexity:
+    #   Best case: O(V + E) - graph traversal
+    #   Average case: O(V + E)
+    #   Worst case: O(V + E)
+    # Space Complexity: O(1)
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         if not heights or not heights[0]: return []
         m, n = len(heights), len(heights[0])

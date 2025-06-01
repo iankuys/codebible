@@ -16,6 +16,11 @@
 # Therefore, return 3 as the starting index.
 # smart solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         if (sum(gas) - sum(cost) < 0):
             return -1
@@ -33,6 +38,11 @@ class Solution:
 
 # 33/40 passed bruh ran out of time (shoudl be useful for traversing arrays in cycles)
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
 
         def dfs(remain_gas, index, visited):

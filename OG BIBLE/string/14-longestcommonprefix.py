@@ -1,5 +1,10 @@
 # LeetCode Problem 14: https://leetcode.com/problems/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def longestCommonPrefix(self, strs: List[str]) -> str:
         prefix = strs[0]
 

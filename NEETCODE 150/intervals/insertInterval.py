@@ -13,6 +13,11 @@
 # Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         res = []
 

@@ -17,6 +17,11 @@ You may return the answer in any order.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(V + E) - graph traversal
+    #   Average case: O(V + E)
+    #   Worst case: O(V + E)
+    # Space Complexity: O(1)
     def generateParenthesis(self, n: int) -> List[str]:
         solutions = []
         target = n

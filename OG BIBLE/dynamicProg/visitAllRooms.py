@@ -10,6 +10,11 @@
 # Since we were able to visit every room, we return true.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
         can_visit = set()
         def dfs(key):

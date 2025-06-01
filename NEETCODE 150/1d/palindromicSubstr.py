@@ -14,6 +14,11 @@
 # Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 class Solution:    
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def expandAndCountPallindromes(self, i, j, s):
         '''Counts the number of pallindrome substrings from a given center i,j        
         1. when i=j, it's an odd-lengthed pallindrome string. 

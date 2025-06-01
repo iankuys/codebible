@@ -9,6 +9,11 @@
 # The path only contains the directories on the path from the root directory to the target file or directory (i.e., no period '.' or double period '..')
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def simplifyPath(self, path: str) -> str:
         
         stack = []

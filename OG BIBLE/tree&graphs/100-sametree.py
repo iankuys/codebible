@@ -6,6 +6,11 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         array1 = []
         array2 = []

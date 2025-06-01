@@ -7,6 +7,11 @@
 # For example, if triplets[i] = [2, 5, 3] and triplets[j] = [1, 7, 5], triplets[j] will be updated to [max(2, 1), max(5, 7), max(3, 5)] = [2, 7, 5].
 # way better solution and clear
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         
         a, b, c = 0, 0, 0
@@ -18,6 +23,11 @@ class Solution:
 
 # works but not efficient and clear
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def mergeTriplets(self, triplets: List[List[int]], target: List[int]) -> bool:
         cur_i, cur_j, cur_k = 0, 0, 0
         count = 0

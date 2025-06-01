@@ -17,6 +17,11 @@
 # same as canConstruct
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         
         hmap = {} 

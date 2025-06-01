@@ -18,6 +18,11 @@ Output: [0]
 """
 # way better soluton
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def moveZeroes(self, nums: List[int]) -> None:
         insert_pos = 0
 
@@ -33,6 +38,11 @@ class Solution:
 
 # mine but not efficient
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def moveZeroes(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.

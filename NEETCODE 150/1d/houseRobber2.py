@@ -8,6 +8,11 @@
 # Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def rob(self, nums: List[int]) -> int:
         def houseRobber(nums):
             n = len(nums)

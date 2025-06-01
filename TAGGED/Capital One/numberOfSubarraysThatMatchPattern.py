@@ -24,6 +24,11 @@ Hence, there are 2 subarrays in nums that match the pattern.
 """
 # smart leetcode solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def countMatchingSubarrays(self, nums: List[int], pattern: List[int]) -> int:
 
         n, p, ans = len(nums), len(pattern), 0
@@ -36,6 +41,11 @@ class Solution:
     
 # sliding window
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def countMatchingSubarrays(self, nums: List[int], pattern: List[int]) -> int:
         
         # get the difference between every element
@@ -73,6 +83,11 @@ class Solution:
             
 # chatgpt solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def countMatchingSubarrays(self, nums: List[int], pattern: List[int]) -> int:
         # Compute difference array (length n - 1)
         diff = [nums[i+1] - nums[i] for i in range(len(nums) - 1)]

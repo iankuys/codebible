@@ -5,6 +5,11 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
         
         return self.areIdentical(head, self.reverseList(head))

@@ -17,6 +17,11 @@
 # 5=1+1+1+1+1
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def change(self, amount: int, coins: List[int]) -> int:
         memo = {}
 
@@ -36,6 +41,11 @@ class Solution:
         return dfs(0, 0)
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def change(self, amount: int, coins: List[int]) -> int:
         dp = [[0] * (len(coins) + 1) for i in range(amount + 1)]
         dp[0] = [1] * (len(coins) + 1)

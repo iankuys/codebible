@@ -1,4 +1,9 @@
 class Solution(object):
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def snakesAndLadders(self, board):
         """
         :type board: List[List[int]]
@@ -24,6 +29,11 @@ class Solution(object):
         return -1
             
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def snakesAndLadders(self, board: List[List[int]]) -> int:
         
         # BFS Solution - Since its BFS it will find the path with least steps.

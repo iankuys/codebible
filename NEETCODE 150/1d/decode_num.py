@@ -21,6 +21,11 @@
 # Explanation: "12" could be decoded as "AB" (1 2) or "L" (12).
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def numDecodings(self, s: str) -> int:
         dp = {len(s) : 1}
 

@@ -16,6 +16,11 @@
 # Explanation: The entire string s is the minimum window.
 # https://leetcode.com/problems/minimum-window-substring/description/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def minWindow(self, s: str, t: str) -> str:
         if t == "":
             return ""

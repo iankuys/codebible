@@ -2,6 +2,11 @@
 
 # working but very inefficient
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         candidates.sort()
 

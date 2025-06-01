@@ -8,6 +8,11 @@
 # Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def lengthOfLIS(self, nums: List[int]) -> int:
         LIS = [1] * len(nums)
         

@@ -3,6 +3,11 @@
 # You can return the answer in any order.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         i = 0
         j = len(numbers) - 1
@@ -18,6 +23,11 @@ class Solution:
         return None
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         
         i = 0

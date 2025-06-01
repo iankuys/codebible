@@ -16,6 +16,11 @@
 from typing import List
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
         res = [1] * n
@@ -35,6 +40,11 @@ class Solution:
         return res
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def productExceptSelf(self, nums: List[int]) -> List[int]:
 
         # could technically find the product of everything before

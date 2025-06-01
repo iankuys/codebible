@@ -18,6 +18,11 @@ Explanation: ((1 + 2) * 3) - 4 = 5
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def evalRPN(self, tokens: List[str]) -> int:
         stack = []
 

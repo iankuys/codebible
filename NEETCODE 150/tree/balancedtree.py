@@ -9,6 +9,11 @@
 
 # much more intuitive solution (solved by myself)
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         self.res = True
         def recurse(cur):
@@ -27,6 +32,11 @@ class Solution:
         return self.res
     
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
 
         def height(root):

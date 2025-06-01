@@ -8,6 +8,11 @@
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
         anagram_dict = defaultdict(list)
@@ -19,6 +24,11 @@ class Solution:
         return list(anagram_dict.values())
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         hashMap = {}
         output = []

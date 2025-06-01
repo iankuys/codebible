@@ -31,6 +31,11 @@ We made 2 refueling stops along the way, so we return 2.
 import heapq
 
 class Solution(object):
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def minRefuelStops(self, target, tank, stations):
         pq = []  # A maxheap is simulated using negative values
         stations.append((target, float('inf')))
@@ -49,6 +54,11 @@ class Solution(object):
 
 # DFS but not efficient enough
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def minRefuelStops(self, target: int, startFuel: int, stations: List[List[int]]) -> int:
         minStops = float('inf')
         n = len(stations)

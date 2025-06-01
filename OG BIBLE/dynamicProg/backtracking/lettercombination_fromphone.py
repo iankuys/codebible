@@ -3,6 +3,11 @@
 # iterate through all the letters for digit in dictionary and when the length of the combination and the digits are the same, we will append it into our result
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def letterCombinations(self, digits: str) -> List[str]:
         digit_to_letters = {
             "1": [],

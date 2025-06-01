@@ -5,6 +5,11 @@
 # You can return the answer in any order.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n log n) - sorting operation
+    #   Average case: O(n log n)
+    #   Worst case: O(n log n)
+    # Space Complexity: O(1)
     def isAnagram(self, s: str, t: str) -> bool:
         
         sorted_s = sorted(s)

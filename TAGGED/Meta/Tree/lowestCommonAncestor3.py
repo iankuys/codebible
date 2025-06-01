@@ -25,6 +25,11 @@ class Node:
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
         p1 = p
         p2 = q

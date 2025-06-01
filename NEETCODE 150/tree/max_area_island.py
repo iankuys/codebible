@@ -5,6 +5,11 @@
 # Return the maximum area of an island in grid. If there is no island, return 0.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(V + E) - graph traversal
+    #   Average case: O(V + E)
+    #   Worst case: O(V + E)
+    # Space Complexity: O(1)
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         visited = set()
         max_area = 0

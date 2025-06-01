@@ -9,6 +9,11 @@
 # https://leetcode.com/problems/redundant-connection/description/
  
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         par = [i for i in range(len(edges) + 1)]
         rank = [1] * (len(edges) + 1)

@@ -6,6 +6,11 @@
 # Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def maxProfit(self, prices: List[int]) -> int:
         dp = {}
 

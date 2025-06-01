@@ -11,6 +11,11 @@ The largest rectangle is shown in the red area, which has an area = 10 units.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def largestRectangleArea(self, heights: List[int]) -> int:
         maxArea = 0
         stack = [] # pair: (index, height)

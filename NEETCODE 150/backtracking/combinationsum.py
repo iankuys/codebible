@@ -15,6 +15,11 @@
 # These are the only two combinations.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
 

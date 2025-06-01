@@ -20,6 +20,11 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         
         if not lists:

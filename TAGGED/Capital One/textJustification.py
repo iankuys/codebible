@@ -35,6 +35,11 @@ from typing import List
 import math
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
         i = 0
         res = []

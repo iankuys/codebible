@@ -12,6 +12,11 @@ Explanation: The maximal rectangle is shown in the above picture.
 # using histogram and stack, stack solution is from leetcode 86, largest area from histogram
 class Solution:
     # Get the maximum area in a histogram given its heights
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def largestRectangleArea(self, heights: List[int]) -> int:
         maxArea = 0
         stack = []
@@ -58,6 +63,11 @@ class Solution:
 
 # using dfs and histogram
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def maximalRectangle(self, matrix: List[List[str]]) -> int:
         
         m = len(matrix)

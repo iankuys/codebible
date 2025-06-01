@@ -12,6 +12,11 @@ Explanation: There are only 4 submatrices, shown in the image above, that contai
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def countSubmatrices(self, grid: List[List[int]], k: int) -> int:
         m = len(grid)
         n = len(grid[0])

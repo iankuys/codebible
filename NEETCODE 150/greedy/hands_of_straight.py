@@ -10,6 +10,11 @@
 # Output: true
 # Explanation: Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def isNStraightHand(self, hand: List[int], groupSize: int) -> bool:
         
         if len(hand) % groupSize:

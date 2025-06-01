@@ -4,6 +4,11 @@
 # Explanation: The answer is "abc", with the length of 3. 
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def lengthOfLongestSubstring(self, s: str) -> int:
         # dictionary for repeating characters
         dictionary = {}
@@ -28,6 +33,11 @@ class Solution:
             
 # 2025 solution
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def lengthOfLongestSubstring(self, s: str) -> int:
         repeat = {}
         start = 0

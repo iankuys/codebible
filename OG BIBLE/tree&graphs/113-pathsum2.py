@@ -9,6 +9,11 @@ class TreeNode:
         self.right = right
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         list = []
         result = []

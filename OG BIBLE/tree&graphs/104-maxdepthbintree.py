@@ -1,5 +1,10 @@
 # LeetCode Problem 104: https://leetcode.com/problems/
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         maxim = 0
         depth = 0

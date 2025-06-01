@@ -39,6 +39,11 @@ class BIT:
         return ans
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def getResults(self, queries: List[List[int]]) -> List[bool]:
         sl = SortedList()
         
@@ -94,6 +99,11 @@ class Solution:
 from sortedcontainers import SortedList
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def getResults(self, queries: List[List[int]]) -> List[bool]:
         obstacles = SortedList()
         res = []
@@ -124,6 +134,11 @@ class Solution:
 # seg tree solution (complex)
 from sortedcontainers import SortedList
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def getResults(self, queries: List[List[int]]) -> List[bool]:
 
         # Blocks along the axis

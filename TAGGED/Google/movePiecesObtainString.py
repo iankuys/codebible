@@ -19,6 +19,11 @@ Since it is possible to get the string target from start, we return true.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - single pass through array
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def canChange(self, start: str, target: str) -> bool:
         start_length = len(start)
         

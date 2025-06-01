@@ -8,6 +8,11 @@
 
 # the proper way with hash set
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def isHappy(self, n: int) -> bool:
         
         def nextNum(n):
@@ -29,6 +34,11 @@ class Solution:
 
 # recursion solution with lucky base case
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def isHappy(self, n: int) -> bool:
         sum = 0
         if n == 1:

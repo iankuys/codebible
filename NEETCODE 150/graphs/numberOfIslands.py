@@ -6,6 +6,11 @@
 # boundary conditions are the length of the grid and each element
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def numIslands(self, grid: List[List[str]]) -> int:
         count = 0
         for i in range(len(grid)):

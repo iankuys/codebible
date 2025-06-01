@@ -13,6 +13,11 @@ If there does not exist more candies that can be crushed (i.e., the board is sta
 You need to perform the above rules until the board becomes stable, then return the stable board.
 """
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def candyCrush(self, board: List[List[int]]) -> List[List[int]]:
         done = True
         m = len(board)
@@ -62,6 +67,11 @@ class Solution:
 
 # 12/24 i give up
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def candyCrush(self, board: List[List[int]]) -> List[List[int]]:
 
         explored = {}
@@ -131,6 +141,11 @@ class Solution:
 from typing import List
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def diagonalPop(self, board: List[List[int]]) -> List[List[int]]:
         m, n = len(board), len(board[0])
         done = True

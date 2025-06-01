@@ -11,6 +11,11 @@ class Solution:
     GRAY = 2
     BLACK = 3
 
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findOrder(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -63,6 +68,11 @@ class Solution:
 
 # (MY SOLUTION) doesnt work tho XD
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         requisites = {}
         result = []

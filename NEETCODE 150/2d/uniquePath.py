@@ -6,6 +6,11 @@
 
  
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - hash table operations
+    #   Average case: O(1)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def uniquePaths(self, m: int, n: int) -> int:
         grid_dict = {}
         return self.gridTraveler(m, n, grid_dict)

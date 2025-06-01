@@ -24,6 +24,11 @@ Explanation: The first 2 pairs are returned from the sequence: [1,1],[1,1],[1,2]
 from heapq import heappush, heappop
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(V + E) - graph traversal
+    #   Average case: O(V + E)
+    #   Worst case: O(V + E)
+    # Space Complexity: O(1)
     def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
         
         m = len(nums1)

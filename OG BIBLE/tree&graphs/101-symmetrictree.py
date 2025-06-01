@@ -6,6 +6,11 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - tree traversal where h is height
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(h)
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         return self.dfs(root.left, root.right)
         

@@ -18,6 +18,11 @@ Output: false
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def validPalindrome(self, s: str) -> bool:
         
         def checkPalindrome(s, i, j):

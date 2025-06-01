@@ -17,6 +17,11 @@
 # Explanation: The original array was [1,2,3,4,5] rotated 3 times.
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def findMin(self, nums: List[int]) -> int:
         
         l = 0

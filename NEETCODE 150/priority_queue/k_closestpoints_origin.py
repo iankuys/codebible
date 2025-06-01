@@ -18,6 +18,11 @@ import math
 from collections import defaultdict 
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         
         origin = (0,0)

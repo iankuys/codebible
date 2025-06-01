@@ -12,6 +12,11 @@ Note: A board does not need to be full or be solvable to be valid.
 """
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n²) - nested iteration
+    #   Average case: O(n²)
+    #   Worst case: O(n²)
+    # Space Complexity: O(1)
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         
         col_dup = {}

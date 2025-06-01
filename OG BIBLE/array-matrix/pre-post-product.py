@@ -14,6 +14,11 @@
 # pre*pro = [1bcd, 1acd, 1abd, 1abc] -> Solution
 
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
         sol = [1] * n

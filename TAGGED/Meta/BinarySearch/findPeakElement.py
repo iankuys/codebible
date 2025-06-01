@@ -21,6 +21,11 @@ Explanation: Your function can return either index number 1 where the peak eleme
 # Basically we are using binary search to find the peak element by comparing the mid element with the next element.
 # This is because we are guaranteed to find a peak element in the array by dividing the array into two halves where the peak will be present.
 class Solution:
+    # Time Complexity:
+    #   Best case: O(1) - binary search
+    #   Average case: O(log n)
+    #   Worst case: O(log n)
+    # Space Complexity: O(1)
     def findPeakElement(self, nums: List[int]) -> int:
         l = 0
         r = len(nums) - 1

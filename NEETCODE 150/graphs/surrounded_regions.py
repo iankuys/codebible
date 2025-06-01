@@ -1,4 +1,9 @@
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear operation
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def solve(self, board: List[List[str]]) -> None:
         """
         Do not return anything, modify board in-place instead.

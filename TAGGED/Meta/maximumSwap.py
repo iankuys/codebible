@@ -25,6 +25,11 @@ If the current val equals to max, do nothing, because switch a number to the las
 If later another number less than max, we update our candidate, because switch at the front will give bigger result. Done!
 """
 class Solution:
+    # Time Complexity:
+    #   Best case: O(n) - linear scan
+    #   Average case: O(n)
+    #   Worst case: O(n)
+    # Space Complexity: O(1)
     def maximumSwap(self, num):
         """
         :type num: int
