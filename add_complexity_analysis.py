@@ -111,7 +111,8 @@ class ComplexityAnalyzer:
                 'description': 'heap creation'
             }
         }
-      def analyze_function(self, code: str, func_name: str) -> Dict[str, str]:
+    
+    def analyze_function(self, code: str, func_name: str) -> Dict[str, str]:
         """Analyze a function and determine its complexity."""
         # Count loops and nesting
         loop_count = len(re.findall(r'for.*in.*:', code))
