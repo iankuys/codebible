@@ -4,19 +4,20 @@
 # The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
 
 # The length of a path between two nodes is represented by the number of edges between them.
+
+# Time Complexity:
+#   Best case: O(n) - tree traversal where h is height
+#   Average case: O(n)
+#   Worst case: O(n)
+# Space Complexity: O(h)
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
 class Solution:
-    # Time Complexity:
-    #   Best case: O(n) - tree traversal where h is height
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(h)
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         self.diameter = 0
 
@@ -26,10 +27,10 @@ class Solution:
             left = dfs(node.left)
             right = dfs(node.right)
 
-            # DFS all the way down then return the max height
-            # Update the diameter at this node
+            # 1) the current node's both left and right branches might be a part of the longest path
             self.diameter = max(self.diameter, left + right)
-            # Return height
+            
+            # 2) one of the current node's left/right branches might be a part of the longest path.
             return 1 + max(left, right)
 
         dfs(root)

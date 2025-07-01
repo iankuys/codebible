@@ -12,7 +12,7 @@ print_recently_played(userId, k)
 """
 
 from collections import defaultdict
-
+import heapq
 class MusicAnalytics:
 
     def __init__(self):
@@ -39,3 +39,10 @@ class MusicAnalytics:
         for key, value in self.song_users.items():
             print(f"Song {key}: {len(value)} of unique users")
             
+    def print_top_k_most_played_songs(self, k):
+        heap = [(len(value), key) for key, value in self.song_users.items()]
+        res = heapq.nlargest(k, heap)
+        print("The most played songs by unique users are:")
+        for count, song in res:
+            print(f"Song {song} with {count} unique users")
+        

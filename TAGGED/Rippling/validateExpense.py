@@ -21,12 +21,12 @@ from typing import List
 class Expense:
     
     def __init__(self, expense_id: str, item_id: str, expense_type: str, amount_in_usd: float, seller_type: str, seller_name: str):
-        self.expenseid = ""
-        self.itemId = ""
-        self.expenseType = ""
-        self.amountInUsd = 0.0
-        self.sellerType = ""
-        self.SellerName = ""
+        self.expenseid = expense_id
+        self.itemId = item_id
+        self.expenseType = expense_type
+        self.amountInUsd = amount_in_usd
+        self.sellerType = seller_type
+        self.SellerName = seller_name
 
 class Rule(ABC):
     @abstractmethod
