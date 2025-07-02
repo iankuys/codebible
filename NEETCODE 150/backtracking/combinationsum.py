@@ -26,7 +26,7 @@ class Solution:
         def dfs(index, cur, total):
             if total == target:
                 res.append(cur.copy())
-                return 
+                return
             if index >= len(candidates) or total > target:
                 return
 

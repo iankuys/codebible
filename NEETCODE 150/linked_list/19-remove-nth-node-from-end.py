@@ -4,6 +4,43 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
+# two pass
+class Solution:
+    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+        dummy = ListNode(0)
+        dummy.next = head
+        length = 0
+        first = head
+        while first is not None:
+            length += 1
+            first = first.next
+        length -= n
+        first = dummy
+        while length > 0:
+            length -= 1
+            first = first.next
+        first.next = first.next.next
+        return dummy.next
+    
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+
+        dummy = ListNode(0)
+        dummy.next = head
+        first = dummy
+        second = dummy
+        # Advances first pointer so that the gap between first and second is n nodes apart
+        for i in range(n + 1):
+            first = first.next
+
+        # Move first to the end, maintaining the gap
+        while first is not None:
+            first = first.next
+            second = second.next
+        second.next = second.next.next
+        return dummy.next
+    
 class Solution:
     # Time Complexity:
     #   Best case: O(n) - linear operation

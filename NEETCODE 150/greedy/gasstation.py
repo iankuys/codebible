@@ -22,19 +22,24 @@ class Solution:
     #   Worst case: O(n)
     # Space Complexity: O(1)
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
-        if (sum(gas) - sum(cost) < 0):
-            return -1
-
-        gas_tank, start_index = 0, 0
+        total_gain = 0    # Tracks overall net gas after completing the full loop
+        curr_gain = 0     # Tracks net gas from the current starting station
+        answer = 0        # Index of the candidate starting station
 
         for i in range(len(gas)):
-            gas_tank += gas[i] - cost[i]
+            gain = gas[i] - cost[i]  # Net gas gained or lost at this station
+            total_gain += gain       # Add to total gain across the whole trip
+            curr_gain += gain        # Add to current path's gain
 
-            if gas_tank < 0:
-                start_index = i + 1
-                gas_tank = 0
-        
-        return start_index
+            # If current gain drops below zero, we can't reach the next station
+            # from the current starting point. So, try starting from the next station.
+            if curr_gain < 0:
+                curr_gain = 0        # Reset current gain since we're starting fresh
+                answer = i + 1       # Mark the next station as the new starting point
+
+        # If total gain is negative, it's impossible to complete the circuit
+        return answer if total_gain >= 0 else -1
+
 
 # 33/40 passed bruh ran out of time (shoudl be useful for traversing arrays in cycles)
 class Solution:

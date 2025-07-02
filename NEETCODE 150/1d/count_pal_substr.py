@@ -44,4 +44,36 @@ class Solution:
                 r += 1
             
         return res
+
+# Dynamic Programming Approach
+class Solution:
+    def countSubstrings(self, s: str) -> int:
+        n = len(s)
+        ans = 0
+
+        if n == 0:
+            return ans
+
+        dp = [[0 for _ in range(n)] for _ in range(n)]
+
+        # Base case: single letter substr
+        for i in range(n):
+            dp[i][i] = True
+            ans += dp[i][i]
+
+        # Base case: double letter substr
+        for i in range(n - 1):
+            dp[i][i + 1] = (s[i] == s[i + 1])
+            ans += dp[i][i + 1]
+
+        # All other cases: substrings of length 3 to n
+        for length in range(3, n + 1):  # lengths from 3 to n
+            for i in range(n - length + 1):  # ensure j < n
+                j = i + length - 1
+                if s[i] == s[j] and dp[i + 1][j - 1]:
+                    dp[i][j] = True
+                    ans += 1
+
+        return ans
+
         

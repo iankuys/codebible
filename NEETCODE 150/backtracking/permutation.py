@@ -6,6 +6,24 @@
 # Input: nums = [1,2,3]
 # Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
+# assuming all integers in nums are distinct
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        res = []
+
+        def backtrack(cur):
+            if len(cur) == len(nums):
+                res.append(cur.copy())
+
+            for num in nums:
+                if num not in cur:
+                    cur.append(num)
+                    backtrack(cur)
+                    cur.pop()
+
+        backtrack([])
+        return res
+                
 class Solution:
     # Time Complexity:
     #   Best case: O(n!) - backtracking to generate all permutations

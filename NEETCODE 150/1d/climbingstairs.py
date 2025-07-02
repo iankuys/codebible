@@ -26,3 +26,20 @@ class Solution:
         if n not in dict:
             dict[n] = self.dfs(n-1,dict) + self.dfs(n-2,dict)
             return dict[n]
+    
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        memo = {}
+
+        def dfs(n):
+            if n == 0:
+                return 1
+            if n < 0:
+                return 0
+            if n in memo:
+                return memo[n]
+            
+            memo[n] = dfs(n - 1) + dfs(n - 2)
+            return memo[n]
+
+        return dfs(n)

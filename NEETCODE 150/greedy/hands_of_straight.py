@@ -32,11 +32,16 @@ class Solution:
         while minH:
             minHand = minH[0]
 
+            # Try to build a group of size `groupSize` starting from `minCard`
             for i in range(minHand, minHand + groupSize):
                 if i not in count:
                     return False
                 count[i] -= 1
                 if count[i] == 0:
+                    # We are done using this card, so we should remove it from the heap
+                    # But! The card we're removing must be the smallest remaining card.
+                    # If it's not on top of the heap, it means we skipped cards
+                    # and formed groups out of order → invalid
                     if i != minH[0]:
                         return False
                     heapq.heappop(minH)
