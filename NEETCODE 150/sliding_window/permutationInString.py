@@ -33,29 +33,33 @@ class Solution:
 # optimized (read and uinderstand pls)
 # Optimized:
 # We can use an auxiliary variable to count a number of characters whose frequency gets to zero during window sliding. That helps us to avoid iterating over the hashmap for every cycle tick to check whether frequencies turned into zero.
-def checkInclusion(self, s1: str, s2: str) -> bool:
-	cntr, w, match = Counter(s1), len(s1), 0     
 
-	for i in range(len(s2)):
-		if s2[i] in cntr:
-			if not cntr[s2[i]]: match -= 1
-			cntr[s2[i]] -= 1
-			if not cntr[s2[i]]: match += 1
+class Solution:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        # Count characters in s1, set window size, and a match counter
+        cntr, w, match = Counter(s1), len(s1), 0     
 
-		if i >= w and s2[i-w] in cntr:
-			if not cntr[s2[i-w]]: match -= 1
-			cntr[s2[i-w]] += 1
-			if not cntr[s2[i-w]]: match += 1
+        for i in range(len(s2)):
+            if s2[i] in cntr:
+                if not cntr[s2[i]]: match -= 1
+                cntr[s2[i]] -= 1
+                if not cntr[s2[i]]: match += 1
 
-		if match == len(cntr):
-			return True
+            if i >= w and s2[i-w] in cntr:
+                if not cntr[s2[i-w]]: match -= 1
+                cntr[s2[i-w]] += 1
+                if not cntr[s2[i-w]]: match += 1
 
-	return False
+            # If all character counts match (all zero), we found a valid permutation
+            if match == len(cntr):
+                return True
+
+        return False
 
             
 from collections import Counter
 
-# chatgpt solution easy to follow with counter class and just compare the dictionary
+# chatgpt solution easy to follow with counter class and just compare the hash map
 class Solution:
     # Time Complexity:
     #   Best case: O(n log n) - built-in sorting

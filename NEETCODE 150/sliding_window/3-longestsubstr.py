@@ -1,7 +1,21 @@
-# LeetCode Problem 3: https://leetcode.com/problems/
-# Input: s = "abcabcbb"
-# Output: 3
-# Explanation: The answer is "abc", with the length of 3. 
+"""
+3. Longest Substring Without Repeating Characters
+Solved
+Medium
+Topics
+conpanies icon
+Companies
+Hint
+Given a string s, find the length of the longest substring without duplicate characters.
+
+ 
+
+Example 1:
+
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3.
+"""
 
 class Solution:
     # Time Complexity:

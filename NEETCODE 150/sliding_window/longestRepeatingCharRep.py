@@ -27,11 +27,6 @@ class Solution:
     #   Worst case: O(n)
     # Space Complexity: O(1)
     def characterReplacement(self, s: str, k: int) -> int:
-
-        # every window look for the most common char, replace the chars with the most common
-        # window size? would it be a sliding window that checks for the most common char 
-        # in every interval then it adds the k value? 
-        # SHRINK THE WINDOW
         count = {}
         res = 0
         l = 0
@@ -39,7 +34,8 @@ class Solution:
         for r in range(len(s)):
             count[s[r]] = 1 + count.get(s[r], 0)
 
-            # get most frequent char found and deduct the window to check if k fits
+            # If more than k chars in the window need to be replaced to match the most frequent char,
+            # shrink the window from the left
             while (r - l + 1) - max(count.values()) > k:
                 count[s[l]] -= 1
                 l += 1

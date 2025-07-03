@@ -30,27 +30,44 @@ We made 2 refueling stops along the way, so we return 2.
 # Heap solution
 import heapq
 
+
 class Solution(object):
-    # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
+    # Time Complexity: O(n log n)
+    # Space Complexity: O(n)
     def minRefuelStops(self, target, tank, stations):
-        pq = []  # A maxheap is simulated using negative values
+        # Max-heap to store fuel capacities of passed stations
+        # (use negative values to simulate max-heap in Python)
+        max_heap = []
+
+        # Append a dummy station at the target so we always process the final leg
         stations.append((target, float('inf')))
 
-        ans = prev = 0
-        for location, capacity in stations:
-            tank -= location - prev
-            while pq and tank < 0:  # must refuel in past
-                tank += -heapq.heappop(pq)
-                ans += 1
-            if tank < 0: return -1
-            heapq.heappush(pq, -capacity)
-            prev = location
+        # Initialize: total number of refuels, and the previous station's location
+        refuels = 0
+        prev_location = 0
 
-        return ans
+        for location, capacity in stations:
+            # Distance traveled since last station; subtract fuel used
+            tank -= location - prev_location
+
+            # While we don't have enough fuel to reach this station
+            # refuel using the largest available fuel from previous stations
+            while max_heap and tank < 0:
+                tank += -heapq.heappop(max_heap)  # pop the largest fuel
+                refuels += 1
+
+            # If we still can't reach this station, it's impossible
+            if tank < 0:
+                return -1
+
+            # Store the current station's fuel in heap (for possible future use)
+            heapq.heappush(max_heap, -capacity)
+
+            # Update previous station location
+            prev_location = location
+
+        # If we reach the end of loop, we’ve reached the target
+        return refuels
 
 # DFS but not efficient enough
 class Solution:

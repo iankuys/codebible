@@ -28,17 +28,21 @@ class Solution:
     #   Worst case: O(n)
     # Space Complexity: O(1)
     def numDecodings(self, s: str) -> int:
-        dp = {len(s) : 1}
+        dp = {len(s): 1}  # base case: empty string has 1 valid decoding
 
         def dfs(i):
             if i in dp:
                 return dp[i]
             if s[i] == "0":
-                return 0
+                return 0  # cannot decode strings starting with 0
+
+            # Try decoding one character
             res = dfs(i + 1)
-            if (i + 1 < len(s) and (s[i] == "1" or s[i] == "2" and s[i+1] in "0123456")):
+
+            # Try decoding two characters if valid (10-26)
+            if i + 1 < len(s) and (s[i] == "1" or (s[i] == "2" and s[i+1] in "0123456")):
                 res += dfs(i + 2)
-            
+
             dp[i] = res
             return res
 

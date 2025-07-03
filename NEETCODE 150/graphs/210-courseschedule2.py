@@ -5,62 +5,39 @@
 # Return the ordering of courses you should take to finish all courses. If there are many valid answers, return any of them. If it is impossible to finish all courses, return an empty array.
 
 from collections import defaultdict
+
 class Solution:
-
-    WHITE = 1
-    GRAY = 2
-    BLACK = 3
-
-    # Time Complexity:
-    #   Best case: O(n) - linear scan
-    #   Average case: O(n)
-    #   Worst case: O(n)
-    # Space Complexity: O(1)
-    def findOrder(self, numCourses, prerequisites):
-        """
-        :type numCourses: int
-        :type prerequisites: List[List[int]]
-        :rtype: List[int]
-        """
-
-        # Create the adjacency list representation of the graph
-        adj_list = defaultdict(list)
-
-        # A pair [a, b] in the input represents edge from b --> a
+    def findOrder(self, numCourses: int, prerequisites: list[list[int]]) -> list[int]:
+        # Course prerequisites: adjacency list where key: course, value: list of next courses
+        graph = defaultdict(list)
         for dest, src in prerequisites:
-            adj_list[src].append(dest)
+            graph[src].append(dest)
 
-        topological_sorted_order = []
-        is_possible = True
+        # Color states: 0 = unvisited, 1 = visiting, 2 = visited
+        UNVISITED, VISITING, VISITED = 0, 1, 2
+        state = [UNVISITED] * numCourses
+        order = []
+        self.has_cycle = False
 
-        # By default all vertces are WHITE
-        color = {k: Solution.WHITE for k in range(numCourses)}
-        def dfs(node):
-            nonlocal is_possible
-
-            # Don't recurse further if we found a cycle already
-            if not is_possible:
+        def dfs(course):
+            if state[course] == VISITING:
+                self.has_cycle = True
+                return
+            if state[course] == VISITED:
                 return
 
-            # Start the recursion
-            color[node] = Solution.GRAY
+            state[course] = VISITING
+            for neighbor in graph[course]:
+                dfs(neighbor)
+                if self.has_cycle:
+                    return
+            state[course] = VISITED
+            order.append(course)
 
-            # Traverse on neighboring vertices
-            if node in adj_list:
-                for neighbor in adj_list[node]:
-                    if color[neighbor] == Solution.WHITE:
-                        dfs(neighbor)
-                    elif color[neighbor] == Solution.GRAY:
-                         # An edge to a GRAY vertex represents a cycle
-                        is_possible = False
+        for course in range(numCourses):
+            if state[course] == UNVISITED:
+                dfs(course)
+                if self.has_cycle:
+                    return []
 
-            # Recursion ends. We mark it as black
-            color[node] = Solution.BLACK
-            topological_sorted_order.append(node)
-
-        for vertex in range(numCourses):
-            # If the node is unprocessed, then call dfs on it.
-            if color[vertex] == Solution.WHITE:
-                dfs(vertex)
-
-        return topological_sorted_order[::-1] if is_possible else []
+        return order[::-1]

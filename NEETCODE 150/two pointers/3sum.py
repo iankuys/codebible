@@ -49,6 +49,8 @@ class Solution:
         res = []
 
         while i < len(sorted_nums) - 2:
+            
+            # skip duplicates for the first element
             if i > 0 and sorted_nums[i] == sorted_nums[i - 1]:
                 i += 1
                 continue
@@ -62,6 +64,7 @@ class Solution:
                 if total == 0:
                     res.append([sorted_nums[i], sorted_nums[k], sorted_nums[j]])
 
+                    # to keep the triplets unique, we skip duplicates
                     while k < j and sorted_nums[k] == sorted_nums[k + 1]:
                         k += 1
                     while k < j and sorted_nums[j] == sorted_nums[j - 1]:

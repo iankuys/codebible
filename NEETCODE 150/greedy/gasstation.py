@@ -14,7 +14,8 @@
 # Travel to station 2. Your tank = 6 - 4 + 3 = 5
 # Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
 # Therefore, return 3 as the starting index.
-# smart solution
+
+# smart solution (kadance)
 class Solution:
     # Time Complexity:
     #   Best case: O(n) - linear scan

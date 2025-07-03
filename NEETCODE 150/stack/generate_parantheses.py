@@ -16,6 +16,28 @@ Input: n = 3
 Output: ["((()))","(()())","(())()","()(())","()()()"]
 You may return the answer in any order.
 """
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        
+        res = []
+        
+        # we generate as many open parantheses first then
+        # we backtrack and add close parentheses
+        def dfs(s, open_b, close_b):
+            if len(s) == n * 2:
+                res.append(s)
+                return
+            
+            # if we can still add an open parenthesis
+            if open_b:
+                dfs(s + "(", open_b - 1, close_b)
+            # if we can still add a close parenthesis
+            if close_b > open_b:
+                dfs(s + ")", open_b, close_b - 1)
+
+        dfs("", n, n)
+        return res
+
 
 class Solution:
     # Time Complexity:
